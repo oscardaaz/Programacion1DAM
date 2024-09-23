@@ -182,15 +182,7 @@ public class JavaApplication3 {
         int prueba;
         double GIT;
         final double GITTT;
-        asdasd
-                asdad
-                asdd
-                        asdad
-                        asdd
-                                asd
-                                asd
-                                        asd
-                                        asd
+        
                                                 
         
     }   
