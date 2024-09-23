@@ -175,7 +175,9 @@ public class JavaApplication3 {
         System.out.println("¿Puede salir a la calle? "+ puedeSalir);*/
         
         prueba 2
-            prueba git 
+            prueba git zxczxc
+            zxczxc
+            zxczxc
     }   
         
 }
