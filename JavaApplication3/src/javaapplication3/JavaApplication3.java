@@ -180,6 +180,19 @@ public class JavaApplication3 {
         System.out.println("Probando GIT");
         System.out.println("asdads");
         int prueba;
+        double GIT;
+        final double GITTT;
+        asdasd
+                asdad
+                asdd
+                        asdad
+                        asdd
+                                asd
+                                asd
+                                        asd
+                                        asd
+                                                
+        
     }   
         
 }
