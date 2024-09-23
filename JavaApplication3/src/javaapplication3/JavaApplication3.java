@@ -174,17 +174,7 @@ public class JavaApplication3 {
         
         System.out.println("¿Puede salir a la calle? "+ puedeSalir);*/
         
-        //PRUEBA GIT
         
-        System.out.println("Que hora es");
-        System.out.println("Probando GIT");
-        System.out.println("asdads");
-        int prueba;
-        double GIT;
-        final double GITTT;
-        
-                                                
-        Ahora si funciona
     }   
         
 }
