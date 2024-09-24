@@ -6,6 +6,7 @@ package javaapplication3;
 import java.time.LocalTime;
 import java.util.Scanner;
 import java.math.*;
+import java.text.DecimalFormat;
 import java.util.*;
 
 /**
@@ -215,16 +216,47 @@ public class JavaApplication3 {
         
         System.out.println("El valor absoluto de tu numero es " + valorAbsoluto);*/
         
-        //OTRO METODO 1.12;
+        /*//OTRO METODO 1.12;
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.US);
         int valorIntroducido, valorAbsoluto;
         System.out.println("Introduce un numero entero");
         valorIntroducido = sc.nextInt();
         valorAbsoluto = valorIntroducido>0 ? valorIntroducido : -1*valorIntroducido;
-        System.out.println("El valor absoluto del numero es " + valorAbsoluto);
+        System.out.println("El valor absoluto del numero es " + valorAbsoluto);*/
+        
+        //ACTIVIDAD RESUELTA 1.13;
+        
+        /*Scanner sc = new Scanner(System.in);
+        int nota1, nota2, nota3;
+        System.out.println("Introduce la nota del primer trimestre");
+        nota1 = sc.nextInt();
+        System.out.println("Introduce la nota del segundo simestre");
+        nota2 = sc.nextInt();
+        System.out.println("Introduce la nota del tercer trimestre");
+        nota3 = sc.nextInt();
+        double mediaExpediente = (nota1 + nota2 + nota3)/3.0;
+        int mediaBoletin = (int)Math.round(mediaExpediente);
+        DecimalFormat df = new DecimalFormat("#.00");
+        System.out.println("La nota media del expediente es " + df.format(mediaExpediente));
+        System.out.println("La nota media del expediente es " + mediaExpediente);
+        System.out.println("La nota media del boletin es " + mediaBoletin);*/
         
         
+        /*//ACTIVIDAD 1.14;
+        Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+        System.out.println("Introduzca un numero cualquiera");
+        double numero = sc.nextDouble();
+        //numero = Math.round(numero);
+        
+        DecimalFormat num = new DecimalFormat ("#");
+        System.out.println("El numero redondeado es " + num.format(numero));
+        //System.out.println("tu numero es" + numero);*/
+                
+        
+        
+       
     }   
         
 }
