@@ -5,8 +5,8 @@
 package javaapplication3;
 import java.time.LocalTime;
 import java.util.Scanner;
-import java.util.Locale;
 import java.math.*;
+import java.util.*;
 
 /**
  *
@@ -173,6 +173,56 @@ public class JavaApplication3 {
         puedeSalir = !llueve && tareasAcabadas||necesitaLibro;
         
         System.out.println("¿Puede salir a la calle? "+ puedeSalir);*/
+        
+        
+        /*//ACTIVIDAD 1.11 RESUELTA
+        Scanner sc = new Scanner(System.in);
+        final double PRECIO_PERAS = 1.95;
+        final double PRECIO_MANZANAS = 2.35;
+        
+        double kgPeras1, kgManzanas1, kgPeras2, kgManzanas2;
+        System.out.println("KGs de Peras semestre 1");
+        kgPeras1 = sc.nextDouble();
+        
+        System.out.println("KGs de Manzanas semestre 1");
+        kgManzanas1 = sc.nextDouble();
+        
+        System.out.println("KGs de peras semestre 2");
+        kgPeras2 = sc.nextDouble();
+        
+        System.out.println("KGs de manzanas semestre 2 ");
+        kgManzanas2 = sc.nextDouble();
+        
+        double totalPeras1 = PRECIO_PERAS * kgPeras1;
+        double totalPeras2 = PRECIO_PERAS * kgPeras2;
+        double totalManzanas1 = PRECIO_MANZANAS * kgManzanas1;
+        double totalManzanas2 = PRECIO_MANZANAS * kgManzanas2;
+        double totalPeras= totalPeras1 + totalPeras2;
+        double totalManzanas = totalManzanas1 + totalManzanas2;
+        double total = totalPeras + totalManzanas;
+        System.out.println("Tu beneficio anual de manzanas es " + totalManzanas + "$");
+        System.out.println("Tu beneficio anual de peras es " + totalPeras + "$");
+        System.out.println("Tu beneficio anual total es " + total + "$");*/
+        
+        
+        //ACTIVIDAD RESUELTA 1.12
+        
+        /*Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+        System.out.println("Introduzca un numero (negativo o positivo)");
+        int numero = sc.nextInt();
+        int valorAbsoluto = Math.abs(numero);
+        
+        System.out.println("El valor absoluto de tu numero es " + valorAbsoluto);*/
+        
+        //OTRO METODO 1.12;
+        Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+        int valorIntroducido, valorAbsoluto;
+        System.out.println("Introduce un numero entero");
+        valorIntroducido = sc.nextInt();
+        valorAbsoluto = valorIntroducido>0 ? valorIntroducido : -1*valorIntroducido;
+        System.out.println("El valor absoluto del numero es " + valorAbsoluto);
         
         
     }   
