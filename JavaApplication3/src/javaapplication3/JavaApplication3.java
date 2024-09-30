@@ -294,7 +294,7 @@ public class JavaApplication3 {
         System.out.println("¿El numero introducido es positivo? " + resultado);*/
         
         
-        //Actividad 2.3
+        //Actividad 2.3 Introduce 2 numeros y te dice si son iguales, o 0 u no.
         
         /*int numero1, numero2;
         boolean resultado;
@@ -305,9 +305,50 @@ public class JavaApplication3 {
         numero2 = sc.nextInt();
         resultado = (numero1 != numero2) || ((numero1==0) || (numero2==0))?true:false;
         
-        System.out.println("¿El numero introducido es positiv " +resultado);*/
+        System.out.println("¿El numero introducido es igual o 0 " +resultado);*/
         
-       
+        
+        /*//Actividad resuelta 2.1
+        Scanner sc = new Scanner(System.in);
+        int numero;
+        System.out.println("Introduzca un numero");
+        numero = sc.nextInt();
+        if (numero%2 == 0) {
+            System.out.println("El numero es par ");}
+        else {
+            System.out.println("El numero es impar");}*/
+        
+        
+        // Actividad resuelta 2.9 Indica cuantas cifras tiene un numero comprendido.
+        
+        /*Scanner sc = new Scanner(System.in);
+        int numero;
+            System.out.println("Introduzca un numero entre 0 y 99.999");
+            numero = sc.nextInt();
+            if (numero < 10) {
+                System.out.println("El numero tiene una cifra (0 a 9)");
+            }
+            else if (numero < 100) {
+                System.out.println("El numero tiene dos cifras (10 a 99)");
+            }
+            else if (numero < 1000) {
+                System.out.println("El numero tiene tres cifras (100 a 999)");
+            }
+            else if (numero < 10000){
+                System.out.println("El numero tiene cuatro cifras (1000 a 9999");
+            }
+            else if (numero < 100000) {
+                System.out.println("El numero tiene cinco cifras (10000 a 99999");
+            }
+            else if (numero >= 100000) {
+                System.out.println("El numero no esta entre los margenes permitidos");
+            }*/
+            
+            
+            
+            
+            
+        
     }   
         
 }
