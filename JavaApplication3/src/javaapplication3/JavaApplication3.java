@@ -125,6 +125,7 @@ public class JavaApplication3 {
         
         
         /*//Area y Longitud de una circunferencia ACTIVIDAD 1.7 RESUELTA
+        
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.US);
         double radio;
@@ -143,6 +144,7 @@ public class JavaApplication3 {
         
         
         /*//True false mayor de edad, ACTIVIDAD 1.8 RESUELTA
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce tu edad actual ");
         int edadActual = sc.nextInt();
@@ -152,6 +154,7 @@ public class JavaApplication3 {
         
         
         /*//True false numero par, ACTIVIDAD 1.9 RESUELTA
+        
         Scanner sc = new Scanner(System.in);
         int numero;
         System.out.println("Introduce un numero");
@@ -162,6 +165,7 @@ public class JavaApplication3 {
         
         
         /*//ACTIVIDAD 1.10 RESUELTA (OPERADORES LÓGICOS)       
+        
         Scanner sc = new Scanner(System.in);
         boolean llueve, tareasAcabadas, necesitaLibro, puedeSalir;
         System.out.println("¿Llueve? (true/false)");
@@ -217,6 +221,7 @@ public class JavaApplication3 {
         System.out.println("El valor absoluto de tu numero es " + valorAbsoluto);*/
         
         /*//OTRO METODO 1.12;
+        
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.US);
         int valorIntroducido, valorAbsoluto;
@@ -243,7 +248,8 @@ public class JavaApplication3 {
         System.out.println("La nota media del boletin es " + mediaBoletin);*/
         
         
-        /*//ACTIVIDAD 1.14;
+        /*//ACTIVIDAD RESUELTA 1.14;
+        
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.US);
         System.out.println("Introduzca un numero cualquiera");
@@ -253,8 +259,53 @@ public class JavaApplication3 {
         DecimalFormat num = new DecimalFormat ("#");
         System.out.println("El numero redondeado es " + num.format(numero));
         //System.out.println("tu numero es" + numero);*/
-                
         
+                
+        /*//ACTIVIDAD 1.18;
+        
+        //Declaramos las variables usadas
+        int hormigas, arañas, cochinillas, totalPatas;
+        //Solicitar al usuario los numeros de insectos necesarios.
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el numero de hormigas capturadas (6 patas)");
+        hormigas = sc.nextInt();
+        System.out.println("Introduce el numero  de arañas capturadas ( 8 patas)");
+        arañas = sc.nextInt();
+        System.out.println("Introduce el numero de cochinilla capturadas ( 14 patas )");
+        cochinillas = sc.nextInt();
+        //Ponemos la operacion de el total de patas de los insectos
+        totalPatas = (hormigas * 6)+(arañas*8) + (cochinillas*14);
+        //Escribe en pantalla el numero total de patas
+        System.out.println("Tu numero total de patas es " + totalPatas);*/
+        
+        
+        /*Actividad 2.2; Pide un numero por teclado y escribe si es true
+        o false si es positivo o no*/
+        
+        //Declaramos las variables utilizadas;
+        /*int numero;
+        boolean resultado;
+        //Pedimos el dato al usuario;
+        System.out.println("Introduzca un numero entero:");
+        
+        numero = new Scanner(System.in).nextInt();
+        resultado = numero>=0?true:false;
+        //Mostramos el mensaje al usuario diciendo si es positivo (true) o negativo (false)
+        System.out.println("¿El numero introducido es positivo? " + resultado);*/
+        
+        
+        //Actividad 2.3
+        
+        /*int numero1, numero2;
+        boolean resultado;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un numero entero:");
+        numero1 = sc.nextInt();
+        System.out.println("Introduzca otro numero entero:");
+        numero2 = sc.nextInt();
+        resultado = (numero1 != numero2) || ((numero1==0) || (numero2==0))?true:false;
+        
+        System.out.println("¿El numero introducido es positiv " +resultado);*/
         
        
     }   
