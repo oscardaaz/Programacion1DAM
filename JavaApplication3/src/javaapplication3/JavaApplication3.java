@@ -345,27 +345,53 @@ public class JavaApplication3 {
             }*/
             
     
-    /*Un economista te ha encargado un programa para realizar cálculos con 
-    el IVA. La aplicación debe solicitar la base imponible y el IVA que
-    se debe aplicar. Muestra en pantalla el importe correspondiente al IVA y el total.*/
-    
-    /*double baseImponible;
-    double IVA;
-    
-    Scanner sc = new Scanner(System.in);
-    sc.useLocale(Locale.US);
-    DecimalFormat df = new DecimalFormat("#.00");   
-        
+        /*Un economista te ha encargado un programa para realizar cálculos con 
+        el IVA. La aplicación debe solicitar la base imponible y el IVA que
+        se debe aplicar. Muestra en pantalla el importe correspondiente al IVA y el total.*/
+
+        /*double baseImponible;
+        double IVA;
+
+        Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+        DecimalFormat df = new DecimalFormat("#.##");   
+
         System.out.println("Introduce el precio imponible");
         baseImponible = sc.nextDouble();
 
         System.out.println("Introduce el IVA (21 , 10 o 4");
         IVA = sc.nextDouble();
-    
-        System.out.println("Tu importe de IVA es " + df.format(baseImponible * (IVA/100)));
-        System.out.println("Tu importe total es " + df.format((baseImponible * (IVA/100) + baseImponible)));*/
+
+            if (IVA == 21 || IVA == 10 || IVA == 4) {
+                System.out.println("El precio del IVA es " + df.format(baseImponible * (IVA/100)));
+                System.out.println("Tu precio total es " + df.format((baseImponible * (IVA/100) + baseImponible)));
+            }else if (IVA != 21 && IVA != 10){
+                System.out.println("Error, el IVA no esta permitido");
+            }*/
+
+        /*//Otra forma;
+        Scanner sc = new Scanner(System.in); // Creamos el escaner
+        
+        // Definimos las variables necesarias.
+        double baseImponible;
+        double IVA;
+        sc.useLocale(Locale.US); //Forzamos el uso de decimales con punto en la entrada.
+        DecimalFormat df = new DecimalFormat("#.##"); //Forzamos a aproximar a dos decimales.
+
+        System.out.println("Introduce el precio sin IVA"); //Pedimos al usuario el precio.
+        baseImponible = sc.nextDouble(); //Metodo de entrada del precio por el usuario.
+        
+        System.out.println("Introduce el %IVA 21, 10 o 4"); //Pedimos al usuario el IVA.
+        IVA = sc.nextDouble(); //Metodo de entrada del IVA por el usuario.
+        //Creamos una condicion para solo aceptar los 3 ivas aceptados.
+        if (IVA == 21 || IVA == 10 || IVA == 4) {
+            System.out.println("El precio del IVA es " + df.format(baseImponible * (IVA/100)));//Muestra al usuario en pantalla su precio del IVA.
+            System.out.println("Tu precio total es " + df.format((baseImponible * (IVA/100) + baseImponible)));//Muestra al usuario en pantalla su precio total.
+        }else {
+            System.out.println("¡Error, el IVA no esta dentro de los margenes permitidos!");//En caso de iva erroneo, lo comunicamos al usuario.*
+        }*/    
             
-            
+                 
             
         
     }   
