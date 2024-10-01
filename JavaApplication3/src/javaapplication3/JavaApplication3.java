@@ -345,6 +345,32 @@ public class JavaApplication3 {
             }*/
             
     
+    /*int nota;
+        System.out.println("Introduzca la nota (valor entero de 0 a 10)");
+        nota = new Scanner(System.in).nextInt();
+        switch (nota){
+            case 0,1,2,3,4->
+                System.out.println("Suspenso, animo ");
+                
+            case 5->
+                System.out.println("Suficiente, vas justito ");
+                
+            case 6->
+                System.out.println("Bien");
+                
+            case 7,8->
+                System.out.println("Notable");
+                
+            case 9,10->
+                System.out.println("Sobresaliente");
+                System.out.println("Enhorabuena");
+                
+            default->
+                System.out.println("Nota incorrecta, te dije de 0 a 10");
+                
+                        
+                }*/    
+    
         /*Un economista te ha encargado un programa para realizar cálculos con 
         el IVA. La aplicación debe solicitar la base imponible y el IVA que
         se debe aplicar. Muestra en pantalla el importe correspondiente al IVA y el total.*/
