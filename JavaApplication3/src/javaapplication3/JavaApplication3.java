@@ -344,7 +344,26 @@ public class JavaApplication3 {
                 System.out.println("El numero no esta entre los margenes permitidos");
             }*/
             
-            
+    
+    /*Un economista te ha encargado un programa para realizar cálculos con 
+    el IVA. La aplicación debe solicitar la base imponible y el IVA que
+    se debe aplicar. Muestra en pantalla el importe correspondiente al IVA y el total.*/
+    
+    /*double baseImponible;
+    double IVA;
+    
+    Scanner sc = new Scanner(System.in);
+    sc.useLocale(Locale.US);
+    DecimalFormat df = new DecimalFormat("#.00");   
+        
+        System.out.println("Introduce el precio imponible");
+        baseImponible = sc.nextDouble();
+
+        System.out.println("Introduce el IVA (21 , 10 o 4");
+        IVA = sc.nextDouble();
+    
+        System.out.println("Tu importe de IVA es " + df.format(baseImponible * (IVA/100)));
+        System.out.println("Tu importe total es " + df.format((baseImponible * (IVA/100) + baseImponible)));*/
             
             
             
