@@ -407,7 +407,7 @@ public class JavaApplication3 {
         System.out.println("Introduce el precio sin IVA"); //Pedimos al usuario el precio.
         baseImponible = sc.nextDouble(); //Metodo de entrada del precio por el usuario.
         
-        System.out.println("Introduce el %IVA 21, 10 o 4"); //Pedimos al usuario el IVA.
+        System.out.println("Introduce el %IVA (21, 10 o 4)"); //Pedimos al usuario el IVA.
         IVA = sc.nextDouble(); //Metodo de entrada del IVA por el usuario.
         //Creamos una condicion para solo aceptar los 3 ivas aceptados.
         if (IVA == 21 || IVA == 10 || IVA == 4) {
