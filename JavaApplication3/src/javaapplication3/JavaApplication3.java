@@ -459,7 +459,7 @@ public class JavaApplication3 {
                 System.out.println("Tu precio total es " + df.format(total) + " euros.");//Mostramos el total al usuario.*/
         
     }   
-        
+      
 }
         
         
