@@ -460,31 +460,34 @@ public class JavaApplication3 {
     
             
         /*En una granja se compra diariamente una cantidad (comidaDiaria) de comida
-       para los animales. El número de animales que alimentar es numAnimales y sabemos 
-       que cada animal come kilosPorAnimal.
-       Diseñar un programa que pida los datos anteriores al usuario y calcule si 
-       hay comida suficiente para todos los animales y en caso contrario mostrar cuántos 
-       kilos de ración le corresponderían de media a cada animal. Se debe evitar divisiones por cero.*/
+        para los animales. El número de animales que alimentar es numAnimales y sabemos 
+        que cada animal come kilosPorAnimal.
+        Diseñar un programa que pida los datos anteriores al usuario y calcule si 
+        hay comida suficiente para todos los animales y en caso contrario mostrar cuántos 
+        kilos de ración le corresponderían de media a cada animal. Se debe evitar divisiones por cero.*/
 
-       Scanner sc = new Scanner(System.in);
-       sc.useLocale(Locale.US);
-       DecimalFormat df = new DecimalFormat("#.##");
-       double comidaDiaria, numAnimales, kilosPorAnimal, total, racion;
-       System.out.println("Introduce la cantidad de comida comprada hoy en Kgs");
-       comidaDiaria = sc.nextDouble();
-       System.out.println("Introduce el numero de animales a alimentar");
-       numAnimales = sc.nextDouble();
-       System.out.println("Introduce los kgs que come cada animal individualmente");
-       kilosPorAnimal = sc.nextDouble();
-       racion = 
-       total = (numAnimales * kilosPorAnimal);
-           if (total <= comidaDiaria) {
-               System.out.println("Tienes comida de sobra para alimentar a cada animal");
-               System.out.println("A cada animal tienes que darle " + kilosPorAnimal + " Kilogramos de comida");
-           }else if (total > comidaDiaria){  
-               System.out.println("No tienes comida suficiente para alimentar a cada animal");
-               System.out.println("Tienes que dar a cada animal " + (comidaDiaria/numAnimales) + " Kilogramos de comida");
-           }
+        /*Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+        DecimalFormat df = new DecimalFormat("#.##");
+        double comidaDiaria, numAnimales, kilosPorAnimal, total;
+
+        System.out.println("Introduce la cantidad de comida comprada hoy en Kgs");
+        comidaDiaria = sc.nextDouble();
+
+        System.out.println("Introduce el numero de animales a alimentar");
+        numAnimales = sc.nextDouble();
+
+        System.out.println("Introduce los kgs que come cada animal individualmente");
+        kilosPorAnimal = sc.nextDouble();
+
+        total = (numAnimales * kilosPorAnimal);
+        if (total <= comidaDiaria) {
+            System.out.println("Tienes comida de sobra para alimentar a cada animal");
+            System.out.println("A cada animal tienes que darle " + df.format(kilosPorAnimal) + " kilogramos de comida");
+        }else {
+            System.out.println("No tienes comida suficiente para alimentar a cada animal");
+            System.out.println("Tienes que dar a cada animal " + df.format((comidaDiaria/numAnimales)) + " kilogramos de comida");
+        }*/
                
                
     }   
