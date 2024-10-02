@@ -438,7 +438,7 @@ public class JavaApplication3 {
         En el caso de que el importe total sea igual o superior a 100 euros, 
         se aplicará automáticamente un bono descuento del 5 %.*/
 
-        /*Scanner sc = new Scanner (System.in);//Definimos el escaner.
+        Scanner sc = new Scanner (System.in);//Definimos el escaner.
         DecimalFormat df = new DecimalFormat("#.##");//Forzamos a usar dos decimales.
         //Definimos las variables y constantes a utilizar.
         int entradasAdultos, entradasInfantiles;
@@ -456,7 +456,7 @@ public class JavaApplication3 {
             if (total>=100){//Definimos un condicional, que en caso de que el total sea mayor a 100 euros, aplique un descuento del 5%.
                 System.out.println("Tu precio total con descuento del 5% es " + df.format((total * 0.95)) + " euros.");//Mostramos el total al usuario
             }else//Si no se da la condicion anterior, muestra el total directamente sin descuento.
-                System.out.println("Tu precio total es " + df.format(total) + " euros.");//Mostramos el total al usuario.*/
+                System.out.println("Tu precio total es " + df.format(total) + " euros.");//Mostramos el total al usuario.
         
     }   
       
