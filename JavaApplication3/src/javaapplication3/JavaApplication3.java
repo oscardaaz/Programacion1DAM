@@ -323,29 +323,29 @@ public class JavaApplication3 {
         
         /*Scanner sc = new Scanner(System.in);
         int numero;
-            System.out.println("Introduzca un numero entre 0 y 99.999");
-            numero = sc.nextInt();
-            if (numero < 10) {
-                System.out.println("El numero tiene una cifra (0 a 9)");
-            }
-            else if (numero < 100) {
-                System.out.println("El numero tiene dos cifras (10 a 99)");
-            }
-            else if (numero < 1000) {
-                System.out.println("El numero tiene tres cifras (100 a 999)");
-            }
-            else if (numero < 10000){
-                System.out.println("El numero tiene cuatro cifras (1000 a 9999");
-            }
-            else if (numero < 100000) {
-                System.out.println("El numero tiene cinco cifras (10000 a 99999");
-            }
-            else if (numero >= 100000) {
-                System.out.println("El numero no esta entre los margenes permitidos");
-            }*/
+        System.out.println("Introduzca un numero entre 0 y 99.999");
+        numero = sc.nextInt();
+        if (numero < 10) {
+            System.out.println("El numero tiene una cifra (0 a 9)");
+        }
+        else if (numero < 100) {
+            System.out.println("El numero tiene dos cifras (10 a 99)");
+        }
+        else if (numero < 1000) {
+            System.out.println("El numero tiene tres cifras (100 a 999)");
+        }
+        else if (numero < 10000){
+            System.out.println("El numero tiene cuatro cifras (1000 a 9999");
+        }
+        else if (numero < 100000) {
+            System.out.println("El numero tiene cinco cifras (10000 a 99999");
+        }
+        else if (numero >= 100000) {
+            System.out.println("El numero no esta entre los margenes permitidos");
+        }*/
             
     
-    /*int nota;
+        /*int nota;
         System.out.println("Introduzca la nota (valor entero de 0 a 10)");
         nota = new Scanner(System.in).nextInt();
         switch (nota){
@@ -417,8 +417,46 @@ public class JavaApplication3 {
             System.out.println("¡Error, el IVA no esta dentro de los margenes permitidos!");//En caso de iva erroneo, lo comunicamos al usuario.*
         }*/    
             
-                 
-            
+        /*Escribe un programa que tome como entrada un número entero e indique
+        qué cantidad hay que sumarle para que el resultado sea múltiplo de 7.*/
+
+        /*System.out.println("Escribe un numero entero positivo, gracias.");
+        int numero = new Scanner(System.in).nextInt();
+        int resto = (numero%7);
+        
+        if (resto == 0){
+            System.out.println("Enhorabuena, tu numero es multiplo de 7 ");
+        }else
+            System.out.println("A tu numero hay que sumarle " + (7-resto));*/        
+    
+        
+        /*Una empresa que gestiona un parque acuático te solicita una aplicación que 
+        les ayude a calcular el importe que hay que cobrar en la taquilla 
+        por la compra de una serie de entradas (cuyo número será introducido por el 
+        usuario). Existen dos tipo de entrada: infantiles, que cuestan 15,50 euros, 
+        y de adultos, que cuestan 20 euros.
+        En el caso de que el importe total sea igual o superior a 100 euros, 
+        se aplicará automáticamente un bono descuento del 5 %.*/
+
+        /*Scanner sc = new Scanner (System.in);//Definimos el escaner.
+        DecimalFormat df = new DecimalFormat("#.##");//Forzamos a usar dos decimales.
+        //Definimos las variables y constantes a utilizar.
+        int entradasAdultos, entradasInfantiles;
+        final double precioAdultos = 20;
+        final double precioInfantiles = 15.50;
+        double total;
+        
+        System.out.println("Introduce el numero de entradas de adultos.");//Pedimos al usuario el nª de entradas adultas.
+        entradasAdultos = sc.nextInt();//Introduce el dato a traves del escaner.
+
+        System.out.println("Introduce el numero de entradas infantiles.");//Pedimos al usuario el nª de entradas infantiles.
+        entradasInfantiles = sc.nextInt();//Introduce el dato a traves del escaner.
+
+        total = ((entradasAdultos * precioAdultos) + (entradasInfantiles * precioInfantiles));//Definimos la variable total.
+            if (total>=100){//Definimos un condicional, que en caso de que el total sea mayor a 100 euros, aplique un descuento del 5%.
+                System.out.println("Tu precio total con descuento del 5% es " + df.format((total * 0.95)) + " euros.");//Mostramos el total al usuario
+            }else//Si no se da la condicion anterior, muestra el total directamente sin descuento.
+                System.out.println("Tu precio total es " + df.format(total) + " euros.");//Mostramos el total al usuario.*/
         
     }   
         
