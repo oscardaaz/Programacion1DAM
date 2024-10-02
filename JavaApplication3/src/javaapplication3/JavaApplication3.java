@@ -438,7 +438,7 @@ public class JavaApplication3 {
         En el caso de que el importe total sea igual o superior a 100 euros, 
         se aplicará automáticamente un bono descuento del 5 %.*/
 
-        Scanner sc = new Scanner (System.in);//Definimos el escaner.
+        /*Scanner sc = new Scanner (System.in);//Definimos el escaner.
         DecimalFormat df = new DecimalFormat("#.##");//Forzamos a usar dos decimales.
         //Definimos las variables y constantes a utilizar.
         int entradasAdultos, entradasInfantiles;
@@ -456,9 +456,39 @@ public class JavaApplication3 {
             if (total>=100){//Definimos un condicional, que en caso de que el total sea mayor a 100 euros, aplique un descuento del 5%.
                 System.out.println("Tu precio total con descuento del 5% es " + df.format((total * 0.95)) + " euros.");//Mostramos el total al usuario
             }else//Si no se da la condicion anterior, muestra el total directamente sin descuento.
-                System.out.println("Tu precio total es " + df.format(total) + " euros.");//Mostramos el total al usuario.
-        
+                System.out.println("Tu precio total es " + df.format(total) + " euros.");//Mostramos el total al usuario.*/
+    
+            
+        /*En una granja se compra diariamente una cantidad (comidaDiaria) de comida
+       para los animales. El número de animales que alimentar es numAnimales y sabemos 
+       que cada animal come kilosPorAnimal.
+       Diseñar un programa que pida los datos anteriores al usuario y calcule si 
+       hay comida suficiente para todos los animales y en caso contrario mostrar cuántos 
+       kilos de ración le corresponderían de media a cada animal. Se debe evitar divisiones por cero.*/
+
+       Scanner sc = new Scanner(System.in);
+       sc.useLocale(Locale.US);
+       DecimalFormat df = new DecimalFormat("#.##");
+       double comidaDiaria, numAnimales, kilosPorAnimal, total, racion;
+       System.out.println("Introduce la cantidad de comida comprada hoy en Kgs");
+       comidaDiaria = sc.nextDouble();
+       System.out.println("Introduce el numero de animales a alimentar");
+       numAnimales = sc.nextDouble();
+       System.out.println("Introduce los kgs que come cada animal individualmente");
+       kilosPorAnimal = sc.nextDouble();
+       racion = 
+       total = (numAnimales * kilosPorAnimal);
+           if (total <= comidaDiaria) {
+               System.out.println("Tienes comida de sobra para alimentar a cada animal");
+               System.out.println("A cada animal tienes que darle " + kilosPorAnimal + " Kilogramos de comida");
+           }else if (total > comidaDiaria){  
+               System.out.println("No tienes comida suficiente para alimentar a cada animal");
+               System.out.println("Tienes que dar a cada animal " + (comidaDiaria/numAnimales) + " Kilogramos de comida");
+           }
+               
+               
     }   
+           
       
 }
         
