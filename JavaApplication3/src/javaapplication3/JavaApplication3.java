@@ -489,7 +489,43 @@ public class JavaApplication3 {
             System.out.println("Tienes que dar a cada animal " + df.format((comidaDiaria/numAnimales)) + " kilogramos de comida");
         }*/
                
-               
+        /*int num, valorAbsoluto;
+        System.out.println("Introduce");
+        num = new Scanner(System.in).nextInt();
+        /*if (num<0) {
+            System.out.println("Tu numero absoluto es " + -(num));
+        }
+        else {System.out.println("tu numero es " + num);}
+        
+        valorAbsoluto = (num<0)? -(num) : num;
+        System.out.println("Valor absoluto " + valorAbsoluto);*/
+        
+        
+         //Base y altura de un triangulo
+        Scanner sc = new Scanner(System.in);
+
+        double base, altura, area;
+            System.out.println("Introduce la base en metros ");
+            base = sc.nextDouble();
+            System.out.println("Introduce la altura en metros");
+            altura = sc.nextDouble();
+        
+        while (base < 0 || altura < 0){
+            System.out.println("Error, solo numeros positivos");
+            System.out.println("Introduce de nuevo la base");
+            base = sc.nextDouble();
+            System.out.println("Introduce de nuevo la altura");
+            altura = sc.nextDouble();
+
+                if (base >= 0 && altura >= 0){
+                break;
+                }}
+
+        area = base * altura / 2;
+        System.out.println("Tu area es " + area);
+        
+        
+        
     }   
            
       
