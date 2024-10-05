@@ -483,12 +483,13 @@ public class JavaApplication3 {
         total = (numAnimales * kilosPorAnimal);
         if (total <= comidaDiaria) {
             System.out.println("Tienes comida de sobra para alimentar a cada animal");
-            System.out.println("A cada animal tienes que darle " + df.format(kilosPorAnimal) + " kilogramos de comida");
+            
         }else {
             System.out.println("No tienes comida suficiente para alimentar a cada animal");
             System.out.println("Tienes que dar a cada animal " + df.format((comidaDiaria/numAnimales)) + " kilogramos de comida");
         }*/
-               
+          
+        
         /*int num, valorAbsoluto;
         System.out.println("Introduce");
         num = new Scanner(System.in).nextInt();
@@ -502,8 +503,9 @@ public class JavaApplication3 {
         
         
          //Base y altura de un triangulo
-        Scanner sc = new Scanner(System.in);
-
+        /*Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+        DecimalFormat df = new DecimalFormat("#.##");
         double base, altura, area;
             System.out.println("Introduce la base en metros ");
             base = sc.nextDouble();
@@ -522,7 +524,92 @@ public class JavaApplication3 {
                 }}
 
         area = base * altura / 2;
-        System.out.println("Tu area es " + area);
+        System.out.println("Tu area es " + df.format(area) + " metros cuadrados");*/
+        
+       
+        /*Crea un programa que muestre al usuario un par de números aleatorios 
+    (entre 1 y 99) y una operación a realizar entre ellos (suma, resta o 
+    multiplicación). El programa debe recuperar el cálculo introducido por el 
+    usuario e indicar si es correcto o incorrecto, mostrando el valor correcto 
+    en caso de fallar el usuario.*/
+    
+    
+        /*Scanner sc = new Scanner(System.in);   
+        Random random = new Random();
+        int num1 = random.nextInt(101);
+        int num2 = random.nextInt(101);
+            //System.out.println("Estos son tus dos numeros " + num1 + " " + num2);
+        int opcionAleatoria = random.nextInt(3);
+        int resultado = 0;
+        int resultado2;
+    
+        //System.out.println("Haz esta operacion " + opcionAleatoria);
+        switch (opcionAleatoria){
+            case 0 -> {
+                resultado = num1 + num2;
+                System.out.println("Realiza esta operacion " + num1 +" + " + num2);
+            }
+            case 1 -> {
+                resultado = num1 - num2;
+                System.out.println("Realiza esta operacion " + num1 +" - " + num2);
+            }
+            case 2 -> {
+                resultado = num1 * num2;
+                System.out.println("Realiza esta operacion " + num1 +" * " + num2);
+            }
+            }
+        
+        System.out.println("Introduce tu respuesta");
+        resultado2 = sc.nextInt();
+        
+        if (resultado == resultado2){
+            System.out.println("Enhorabuena, tu respuesta es correcta");
+        }else {
+            System.out.println("Tu respuesta es incorrecta");
+            System.out.println("La respuesta correcta seria " + resultado);
+        }*/
+        
+        
+        /*Diseña una aplicación que, dado un número de DNI (solicitado al usuario), 
+        calcule la letra que le corresponde.*/
+    
+        /*Scanner sc = new Scanner(System.in);
+        int dni, calculoLetra;
+        System.out.println("Escribe los 8 digitos de tu DNI ");
+        dni = sc.nextInt();
+        calculoLetra = (dni%22);
+        
+        char letraDni;
+        switch (calculoLetra){
+            case 0 -> letraDni = 'T';
+            case 1 -> letraDni = 'R';
+            case 2 -> letraDni = 'W';
+            case 3 -> letraDni = 'A';
+            case 4 -> letraDni = 'G';
+            case 5 -> letraDni = 'M';
+            case 6 -> letraDni = 'Y';
+            case 7 -> letraDni = 'F';
+            case 8 -> letraDni = 'P';
+            case 9 -> letraDni = 'D';
+            case 10 -> letraDni = 'X';
+            case 11 -> letraDni = 'B';
+            case 12 -> letraDni = 'N';
+            case 13 -> letraDni = 'J';
+            case 14 -> letraDni = 'Z';
+            case 15 -> letraDni = 'S';
+            case 16 -> letraDni = 'Q';
+            case 17 -> letraDni = 'V';
+            case 18 -> letraDni = 'H';
+            case 19 -> letraDni = 'L';
+            case 20 -> letraDni = 'C';
+            case 21 -> letraDni = 'K';
+            case 22 -> letraDni = 'E';
+            default -> letraDni = '?';
+        }
+        
+        System.out.println("Tu letra del DNI es " +letraDni);
+        System.out.println("Tu DNI completo seria " + dni + letraDni);*/
+        
         
         
         
