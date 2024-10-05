@@ -538,7 +538,7 @@ public class JavaApplication3 {
         Random random = new Random();
         int num1 = random.nextInt(101);
         int num2 = random.nextInt(101);
-            //System.out.println("Estos son tus dos numeros " + num1 + " " + num2);
+        //System.out.println("Estos son tus dos numeros " + num1 + " " + num2);
         int opcionAleatoria = random.nextInt(3);
         int resultado = 0;
         int resultado2;
