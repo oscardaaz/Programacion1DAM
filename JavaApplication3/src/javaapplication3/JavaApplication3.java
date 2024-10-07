@@ -611,7 +611,66 @@ public class JavaApplication3 {
         System.out.println("Tu DNI completo seria " + dni + letraDni);*/
         
         
+        /*Escribe una aplicación que solicite al usuario un número comprendido 
+        entre 0 y 9999. La aplicación tendrá que indicar si el número 
+        introducido es capicúa.*/
         
+        Scanner sc = new Scanner(System.in);
+        int num, a4, b3, c2, d1;
+        System.out.println("Introduce un numero de 4 digitos");
+        num = sc.nextInt();
+            
+            if (num<10000){
+            a4 = (num%10);
+                //System.out.println("asd"+ a4);
+            b3 = ((num - a4) / 10)%10;
+                //System.out.println("as" + b3);
+            int num3 = ((num - a4) / 10);
+            c2 = ((num3 - b3)/10)%10;
+                //System.out.println("asc" + c2);
+            int num4 = ((num3 - b3)/10);
+                d1 = ((num4 - c2)/10)%10;
+                //System.out.println("asd"+ d1);
+                    if (a4 == d1 && b3 == c2){
+                        System.out.println("Enhorabuena, tu numero es capicua");
+                    }else System.out.println("Tu numero no es capicua");
+            }else System.out.println("Tu numero introducido es erroneo, introduce uno de 4 digitos");
+        
+        
+        //Actividad 3.1    
+        /*Diseña una aplicacion que muestre la edad maxima y minima de un grupo de 
+        alumnos. El usuario introducira las edades y terminara escribiendo -1.*/
+        
+        /*int edad,max,min;
+        max = 0;
+        min = 100;
+        edad = 0;
+        Scanner sc = new Scanner(System.in); 
+        while (edad!= -1){
+            System.out.println("Introduce la edad del alumno:");
+            edad = sc.nextInt();
+            if (edad > max && edad != -1) max = edad;
+            if (edad < min && edad != -1) min = edad;
+            }
+        if (max == 0) System.out.println("No se ha introducido ninguna edad");
+        else    System.out.println("Edad max: "+max + " Edad min: " + min);*/
+        
+        //Actividad resuelta 3.1
+        /*Diseñar un programa que muestre si el numero es par, positivo y su cuadrado,
+        se para cuando es introducido 0*/
+
+        /*int numero = 1 , cuadrado;
+        boolean par, positivo;
+        Scanner sc = new Scanner(System.in);
+
+        while (numero != 0) {    
+        System.out.println("Introduzca un numero");
+        numero = sc.nextInt();
+        par = numero%2 == 0;
+        positivo = (numero >= 0);
+        cuadrado = (int)Math.pow(numero,2);
+        System.out.println("El numero es par; " +par+ " El numero es positivo " 
+                + positivo+ " Su cuadrado es: " + cuadrado);*/
         
     }   
            
