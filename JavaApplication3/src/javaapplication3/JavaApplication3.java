@@ -615,12 +615,12 @@ public class JavaApplication3 {
         entre 0 y 9999. La aplicación tendrá que indicar si el número 
         introducido es capicúa.*/
         
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         int num, a4, b3, c2, d1;
         System.out.println("Introduce un numero de 4 digitos");
         num = sc.nextInt();
             
-            if (num<10000){
+            if (num<10000 && num>999){
             a4 = (num%10);
                 //System.out.println("asd"+ a4);
             b3 = ((num - a4) / 10)%10;
@@ -634,7 +634,7 @@ public class JavaApplication3 {
                     if (a4 == d1 && b3 == c2){
                         System.out.println("Enhorabuena, tu numero es capicua");
                     }else System.out.println("Tu numero no es capicua");
-            }else System.out.println("Tu numero introducido es erroneo, introduce uno de 4 digitos");
+            }else System.out.println("Tu numero introducido es erroneo, introduce uno de 4 digitos");*/
         
         
         //Actividad 3.1    
@@ -671,6 +671,81 @@ public class JavaApplication3 {
         cuadrado = (int)Math.pow(numero,2);
         System.out.println("El numero es par; " +par+ " El numero es positivo " 
                 + positivo+ " Su cuadrado es: " + cuadrado);*/
+    
+        
+        /*Programa que muestra la suma de todas las edades, media, numero de
+        alumnos y cuantos son mayores de edad. Hasta meter un numero negativo.*/
+
+        /*int edad = 0, numAlumnos = 0, sumaEdades = 0, mayores18 = 0;
+        double media;
+        edad = 0;
+        Scanner sc = new Scanner(System.in);
+        while (edad >= 0){
+            System.out.println("Introduzca la edad");
+            edad=sc.nextInt();
+            if (edad >= 0){
+            ++numAlumnos;
+            sumaEdades += edad;
+            mayores18 = edad>=18 ? mayores18+1: mayores18;
+        }}
+            media = sumaEdades/numAlumnos*1.0;
+            System.out.println("Suma edades: " +sumaEdades);
+            System.out.println("Media: " + media);
+            System.out.println("Numero de alumnos: " + numAlumnos);
+            System.out.println("Mayores de edad: " + mayores18);*/
+        
+        
+        /*El programa genera u numero entre 1 y 100 y el usuario tiene que 
+        adivinarlo. En cada intento el programa debe informar si el numero 
+        es mayor  o menor al indicado por el usuario. El programa termina
+        cuando el usuario acierta o cuando se rinde informando el valor -1.
+        */
+        
+        /*Scanner sc = new Scanner(System.in);
+        Random random = new Random();
+        int numero = random.nextInt(101);
+        int numeroUsuario = 2000;
+        System.out.println("¿Que numero es?");
+            while (numeroUsuario != numero && numeroUsuario != -1){
+        
+            numeroUsuario = sc.nextInt();
+                if (numeroUsuario > numero && numeroUsuario != -1)System.out.println("Tu numero es menor, prueba de nuevo ");
+                else if (numeroUsuario < numero && numeroUsuario != -1)System.out.println("Tu numero es mayor, prueba de nuevo ");
+               
+            }   
+        if (numeroUsuario == numero){
+        System.out.println("Enhorabuena tu numero coincide");
+        System.out.println("Tu numero era el " + numero);
+        }else if (numeroUsuario == -1){
+            System.out.println("Oh no te has rendido, buena suerte la proxima vez");
+        }*/
+    
+        
+        /*Programa que calcula el valor mas alto de los introducidos por el usuario
+        y devuelve dicho valor yel identificador correlativo asociado.
+        La introduccion de valores acaba cuando se informa un -1.*/
+        
+        /*Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+        int identificador = 0, identificadorMax = 0;
+        double altura = 0.0, alturaMax = 0;
+        while(altura != -1.0){
+            System.out.println("Introduzca la altura del arbol " + identificador+ ": ");
+            altura = sc.nextDouble();
+            if (altura > alturaMax && altura != -1.0){
+                    alturaMax = altura;
+                    identificadorMax = identificador;
+            }        
+            identificador++;
+            
+        }
+        System.out.println("");
+        System.out.println("El arbol mas alto es el numero " + identificadorMax + 
+                " que mide " + alturaMax);*/
+        
+        
+        
+        
         
     }   
            
