@@ -744,6 +744,32 @@ public class JavaApplication3 {
                 " que mide " + alturaMax);*/
         
         
+        /*Programa que muestra al usuario dos número aleatorios entre 1 y 100
+        y espera que los sume. El usuario introduce la suma de los números y
+        en caso de acertar, se proponen otros números. En caso contrario, el 
+        programa termina mostrando el número de operaciones realizadas correctamente*/
+
+        /*Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+        int num1, num2, suma;
+        suma = 0;
+        int contador = 0;
+        int numUsuario = 0;
+    
+        while (numUsuario == suma){
+            num1 = rand.nextInt(101);
+            num2 = rand.nextInt(101);
+            suma = num1 + num2;
+                System.out.println("Introduzca la suma de " +num1+ " y "+ num2);
+                numUsuario = sc.nextInt();
+                if (numUsuario == suma){
+                    System.out.println("Has acertado. Continua el juego");
+                    contador++;
+                }else{
+                    System.out.println("Has fallado. Número de operaciones "
+                            + "correctas: " + contador);
+                }}*/
+        
         
         
         
