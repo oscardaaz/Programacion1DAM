@@ -770,12 +770,36 @@ public class JavaApplication3 {
                             + "correctas: " + contador);
                 }}*/
         
+        //Otra forma con do - while
+        
+        /*Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+        int num1, num2, suma;
+        
+        int contador = 0;
+        int numUsuario;
+    
+        do{
+            num1 = rand.nextInt(101);
+            num2 = rand.nextInt(101);
+            suma = num1 + num2;
+                System.out.println("Introduzca la suma de " +num1+ " y "+ num2);
+                numUsuario = sc.nextInt();
+                if (numUsuario == suma){
+                    System.out.println("Has acertado. Continua el juego");
+                    contador++;
+                }else{
+                    System.out.println("Has fallado. Número de operaciones "
+                            + "correctas: " + contador);
+                }
+                }while (numUsuario == suma);*/
+        
         
         /*Escribe una aplicación que solicite al usuario un número comprendido 
         entre 0 y 9999. La aplicación tendrá que indicar si el número 
         introducido es capicúa.*/
         
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         int num, a4, b3, c2, d1;
         System.out.println("Introduce un numero de entre el 0 y el 9999");
         num = sc.nextInt();
@@ -792,8 +816,8 @@ public class JavaApplication3 {
                 d1 = ((num4 - c2)/10)%10;
                 //System.out.println("asd"+ d1);
                     if (a4 == d1 && b3 == c2){
-                        System.out.println("Enhorabuena, tu numero es capicua");
-                    }else System.out.println("Tu numero no es capicua");
+                        System.out.println("Enhorabuena, tu numero es capicua!");
+                    }else System.out.println("Tu numero no es capicua!");
             }
             if (num>99 && num<1000){
                 a4 = (num%10);
@@ -803,8 +827,8 @@ public class JavaApplication3 {
                 int num3 = ((num - a4) / 10);
                 c2 = ((num3 - b3)/10)%10;
                 if (a4 == c2){
-                    System.out.println("Enhorabuena, tu numero es capicua");
-                }else System.out.println("Tu numero no es capicua");
+                    System.out.println("Enhorabuena, tu numero es capicua!");
+                }else System.out.println("Tu numero no es capicua!");
             }
             
             if (num<100 && num>9){
@@ -812,14 +836,81 @@ public class JavaApplication3 {
                 //System.out.println("asd"+ a4);
                 b3 = ((num - a4) / 10)%10;
                     if (a4 == b3){
-                        System.out.println("Enhorabuena, tu numero es capicua");
-                    }else System.out.println("Tu numero no es capicua");
+                        System.out.println("Enhorabuena, tu numero es capicua!");
+                    }else System.out.println("Tu numero no es capicua!");
                 }
                 
             if (num<10 && num >= 0){
-                System.out.println("Enhorabuena, tu numero es capicua");
-  }       
+                System.out.println("Enhorabuena, tu numero es capicua!");
+                }*/       
         
+        
+        /*Programa que saca por consola la palabra Eco tantas veces 
+        como indicadas por el usuario entre 1 y 10? o inf*/
+        
+        /*System.out.println("¿Cuantas veces quieres que repita 'Eco'? "); 
+        int repeticion = new Scanner(System.in).nextInt();
+        int j=1;
+        
+            for (int i=1; i<=repeticion; i++){
+            System.out.println("Eco...");
+            }
+            
+            while (j<=repeticion){
+            
+            System.out.println("Eco... while");
+            j++;
+            }*/
+        
+        
+        /*Programa que muestre los números del 1 al número indicado*/
+        
+        /*System.out.println("Dime un número");
+        int numero = new Scanner(System.in).nextInt();
+        System.out.println("");
+        
+        for (int i=1; i<= numero;i++){
+            System.out.println(i);
+        }
+        
+        for (int i = numero; i >= 1;i--){
+            System.out.println(i);
+        }  */
+        
+        
+        /*Programa que pide 10 numeros enteros y muestra la media*/
+        
+        /*int numero, suma = 0;
+        double media = 0;
+        
+        System.out.println("Dime 10 numeros y te muestro la media: ");
+        Scanner sc = new Scanner(System.in);
+        //DecimalFormat df = new DecimalFormat("#.#"); 
+        for (int i = 1; i<=10; i++){
+                
+                numero = sc.nextInt();
+                suma += numero;
+            }
+        media = suma/10.0;
+        System.out.println("Tu media es " + media);*/
+        
+        
+        /*Programa que muestra la suma de los 10 primeros numeros impares*/
+        
+        /*int suma = 0, contadorImpares = 0;
+        System.out.println("Se muestra la suma de los 10 primeros números impares");
+        
+        for(int i=1; i<=100; i++){
+            if(i%2 != 0){
+                suma += i;
+                contadorImpares++;
+                System.out.println(i);
+            }
+            if(contadorImpares ==10){
+                break;
+        }
+    }
+        System.out.println("La suma es: " + suma);*/
         
    
     }   
