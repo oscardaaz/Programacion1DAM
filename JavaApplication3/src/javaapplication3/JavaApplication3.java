@@ -818,7 +818,7 @@ public class JavaApplication3 {
                 
             if (num<10 && num >= 0){
                 System.out.println("Enhorabuena, tu numero es capicua");
-                    }else System.out.println("Tu numero no es capicua");       
+  }       
         
         
    
