@@ -771,11 +771,59 @@ public class JavaApplication3 {
                 }}*/
         
         
+        /*Escribe una aplicación que solicite al usuario un número comprendido 
+        entre 0 y 9999. La aplicación tendrá que indicar si el número 
+        introducido es capicúa.*/
+        
+        Scanner sc = new Scanner(System.in);
+        int num, a4, b3, c2, d1;
+        System.out.println("Introduce un numero de entre el 0 y el 9999");
+        num = sc.nextInt();
+            
+            if (num<10000 && num>999){
+            a4 = (num%10);
+                //System.out.println("asd"+ a4);
+            b3 = ((num - a4) / 10)%10;
+                //System.out.println("as" + b3);
+            int num3 = ((num - a4) / 10);
+            c2 = ((num3 - b3)/10)%10;
+                //System.out.println("asc" + c2);
+            int num4 = ((num3 - b3)/10);
+                d1 = ((num4 - c2)/10)%10;
+                //System.out.println("asd"+ d1);
+                    if (a4 == d1 && b3 == c2){
+                        System.out.println("Enhorabuena, tu numero es capicua");
+                    }else System.out.println("Tu numero no es capicua");
+            }
+            if (num>99 && num<1000){
+                a4 = (num%10);
+                //System.out.println("asd"+ a4);
+                b3 = ((num - a4) / 10)%10;
+                //System.out.println("as" + b3);
+                int num3 = ((num - a4) / 10);
+                c2 = ((num3 - b3)/10)%10;
+                if (a4 == c2){
+                    System.out.println("Enhorabuena, tu numero es capicua");
+                }else System.out.println("Tu numero no es capicua");
+            }
+            
+            if (num<100 && num>9){
+                a4 = (num%10);
+                //System.out.println("asd"+ a4);
+                b3 = ((num - a4) / 10)%10;
+                    if (a4 == b3){
+                        System.out.println("Enhorabuena, tu numero es capicua");
+                    }else System.out.println("Tu numero no es capicua");
+                }
+                
+            if (num<10 && num >= 0){
+                System.out.println("Enhorabuena, tu numero es capicua");
+                    }else System.out.println("Tu numero no es capicua");       
         
         
+   
     }   
            
-      
 }
         
         
