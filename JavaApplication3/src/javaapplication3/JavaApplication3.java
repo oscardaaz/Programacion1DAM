@@ -799,50 +799,48 @@ public class JavaApplication3 {
         entre 0 y 9999. La aplicación tendrá que indicar si el número 
         introducido es capicúa.*/
         
-        /*Scanner sc = new Scanner(System.in);
-        int num, a4, b3, c2, d1;
-        System.out.println("Introduce un numero de entre el 0 y el 9999");
-        num = sc.nextInt();
+        /*Scanner sc = new Scanner(System.in);//Creamos el escaner para introducir por teclado
+        int num, a4, b3, c2, d1; // Creamos las variables necesarias
+        System.out.println("Introduce un numero de entre el 0 y el 9999");//Pedimos al usuario el numero
+        num = sc.nextInt(); //Definimos la variable num como una entrada de teclado
+        
+        if (num>=0 && num<=9999){//Establecemos el rango de valores necesario
             
-            if (num<10000 && num>999){
+            if (num<10000 && num>999){//Creamos un rango de valores para comparar los numeros con sus modulos.
+            //A partir del modulo y operaciones sacamos los valores individuales de ese numero
             a4 = (num%10);
-                //System.out.println("asd"+ a4);
             b3 = ((num - a4) / 10)%10;
-                //System.out.println("as" + b3);
             int num3 = ((num - a4) / 10);
             c2 = ((num3 - b3)/10)%10;
-                //System.out.println("asc" + c2);
             int num4 = ((num3 - b3)/10);
                 d1 = ((num4 - c2)/10)%10;
-                //System.out.println("asd"+ d1);
-                    if (a4 == d1 && b3 == c2){
-                        System.out.println("Enhorabuena, tu numero es capicua!");
-                    }else System.out.println("Tu numero no es capicua!");
+                    if (a4 == d1 && b3 == c2){//Comparamos los digitos del numero entre si para determinar si es capicua
+                        System.out.println("Enhorabuena, tu numero es capicua!");//Si es capicua
+                    }else System.out.println("Tu numero no es capicua!");//Si no es capicua
             }
-            if (num>99 && num<1000){
+            if (num>99 && num<1000){//Creamos otro rango de valores para comparar los numeros con sus modulos.
+                //A partir del modulo y operaciones sacamos los valores individuales de ese numero
                 a4 = (num%10);
-                //System.out.println("asd"+ a4);
                 b3 = ((num - a4) / 10)%10;
-                //System.out.println("as" + b3);
                 int num3 = ((num - a4) / 10);
                 c2 = ((num3 - b3)/10)%10;
-                if (a4 == c2){
-                    System.out.println("Enhorabuena, tu numero es capicua!");
-                }else System.out.println("Tu numero no es capicua!");
+                if (a4 == c2){//Comparamos los digitos del numero entre si para determinar si es capicua
+                    System.out.println("Enhorabuena, tu numero es capicua!");//Si es capicua
+                }else System.out.println("Tu numero no es capicua!");//Si no es capicua
             }
             
-            if (num<100 && num>9){
+            if (num<100 && num>9){//Creamos otro rango de valores para comparar los numeros con sus modulos.
                 a4 = (num%10);
-                //System.out.println("asd"+ a4);
                 b3 = ((num - a4) / 10)%10;
-                    if (a4 == b3){
-                        System.out.println("Enhorabuena, tu numero es capicua!");
-                    }else System.out.println("Tu numero no es capicua!");
+                    if (a4 == b3){//Comparamos los digitos del numero entre si para determinar si es capicua
+                        System.out.println("Enhorabuena, tu numero es capicua!");//Si es capicua
+                    }else System.out.println("Tu numero no es capicua!");//Si no es capicua
                 }
                 
-            if (num<10 && num >= 0){
+            if (num<10 && num >= 0){//Definimos otro rango, aunque en este todos los numeros son capicua.
                 System.out.println("Enhorabuena, tu numero es capicua!");
-                }*/       
+                }}
+            else System.out.println("Error, introduce un numero del 0 al 9999");//Si introduces un numero fuera del rango original 0 a 9999.*/       
         
         
         /*Programa que saca por consola la palabra Eco tantas veces 
@@ -912,7 +910,121 @@ public class JavaApplication3 {
     }
         System.out.println("La suma es: " + suma);*/
         
-   
+        
+        
+        /*Escribe un programa que solicite al usuario un número entre 1 y 99 y 
+        mostrarlo con letras. Ejemplo: 56 -> mostraría "cincuenta y seis".*/
+        
+        /*System.out.println("Introduce un numero entre el 1 y el 99");//Pedimos al usuario el numero
+        int numero = new Scanner(System.in).nextInt(); //Declaramos la variable numero como un escaner
+        
+            switch (numero) {//Definimos dependiendo el numero introducido la respuesta del 1 al 99
+                case 1 -> System.out.println("Uno");
+                case 2 -> System.out.println("Dos");
+                case 3 -> System.out.println("Tres");
+                case 4 -> System.out.println("Cuatro");
+                case 5 -> System.out.println("Cinco");
+                case 6 -> System.out.println("Seis");
+                case 7 -> System.out.println("Siete");
+                case 8 -> System.out.println("Ocho");
+                case 9 -> System.out.println("Nueve");
+                case 10 -> System.out.println("Diez");
+                case 11 -> System.out.println("Once");
+                case 12 -> System.out.println("Doce");
+                case 13 -> System.out.println("Trece");
+                case 14 -> System.out.println("Catorce");
+                case 15 -> System.out.println("Quince");
+                case 16 -> System.out.println("Dieciseis");
+                case 17 -> System.out.println("Diecisiete");
+                case 18 -> System.out.println("Dieciocho");
+                case 19 -> System.out.println("Diecinueve");
+                case 20 -> System.out.println("Veinte");
+                case 21 -> System.out.println("Veintiuno");
+                case 22 -> System.out.println("Veintidos");
+                case 23 -> System.out.println("Veintitres");
+                case 24 -> System.out.println("Veinticuatro");
+                case 25 -> System.out.println("Veinticinco");
+                case 26 -> System.out.println("Veintiseis");
+                case 27 -> System.out.println("Veintisiete");
+                case 28 -> System.out.println("Veintiocho");
+                case 29 -> System.out.println("Veintinueve");
+                case 30 -> System.out.println("Treinta");
+                case 31 -> System.out.println("Treinta y uno");
+                case 32 -> System.out.println("Treinta y dos");
+                case 33 -> System.out.println("Treinta y tres");
+                case 34 -> System.out.println("Treinta y cuatro");
+                case 35 -> System.out.println("Treinta y cinco");
+                case 36 -> System.out.println("Treinta y seis");
+                case 37 -> System.out.println("Treinta y siete");
+                case 38 -> System.out.println("Treinta y ocho");
+                case 39 -> System.out.println("Treinta y nueve");
+                case 40 -> System.out.println("Cuarenta");
+                case 41 -> System.out.println("Cuarenta y uno");
+                case 42 -> System.out.println("Cuarenta y dos");
+                case 43 -> System.out.println("Cuarenta y tres");
+                case 44 -> System.out.println("Cuarenta y cuatro");
+                case 45 -> System.out.println("Cuarenta y cinco");
+                case 46 -> System.out.println("Cuarenta y seis");
+                case 47 -> System.out.println("Cuarenta y siete");
+                case 48 -> System.out.println("Cuarenta y ocho");
+                case 49 -> System.out.println("Cuarenta y nueve");
+                case 50 -> System.out.println("Cincuenta");
+                case 51 -> System.out.println("Cincuenta y uno");
+                case 52 -> System.out.println("Cincuenta y dos");
+                case 53 -> System.out.println("Cincuenta y tres");
+                case 54 -> System.out.println("Cincuenta y cuatro");
+                case 55 -> System.out.println("Cincuenta y cinco");
+                case 56 -> System.out.println("Cincuenta y seis");
+                case 57 -> System.out.println("Cincuenta y siete");
+                case 58 -> System.out.println("Cincuenta y ocho");
+                case 59 -> System.out.println("Cincuenta y nueve");
+                case 60 -> System.out.println("Sesenta");
+                case 61 -> System.out.println("Sesenta y uno");
+                case 62 -> System.out.println("Sesenta y dos");
+                case 63 -> System.out.println("Sesenta y tres");
+                case 64 -> System.out.println("Sesenta y cuatro");
+                case 65 -> System.out.println("Sesenta y cinco");
+                case 66 -> System.out.println("Sesenta y seis");
+                case 67 -> System.out.println("Sesenta y siete");
+                case 68 -> System.out.println("Sesenta y ocho");
+                case 69 -> System.out.println("Sesenta y nueve");
+                case 70 -> System.out.println("Setenta");
+                case 71 -> System.out.println("Setenta y uno");
+                case 72 -> System.out.println("Setenta y dos");
+                case 73 -> System.out.println("Setenta y tres");
+                case 74 -> System.out.println("Setenta y cuatro");
+                case 75 -> System.out.println("Setenta y cinco");
+                case 76 -> System.out.println("Setenta y seis");
+                case 77 -> System.out.println("Setenta y siete");
+                case 78 -> System.out.println("Setenta y ocho");
+                case 79 -> System.out.println("Setenta y nueve");
+                case 80 -> System.out.println("Ochenta");
+                case 81 -> System.out.println("Ochenta y uno");
+                case 82 -> System.out.println("Ochenta y dos");
+                case 83 -> System.out.println("Ochenta y tres");
+                case 84 -> System.out.println("Ochenta y cuatro");
+                case 85 -> System.out.println("Ochenta y cinco");
+                case 86 -> System.out.println("Ochenta y seis");
+                case 87 -> System.out.println("Ochenta y siete");
+                case 88 -> System.out.println("Ochenta y ocho");
+                case 89 -> System.out.println("Ochenta y nueve");
+                case 90 -> System.out.println("Noventa");
+                case 91 -> System.out.println("Noventa y uno");
+                case 92 -> System.out.println("Noventa y dos");
+                case 93 -> System.out.println("Noventa y tres");
+                case 94 -> System.out.println("Noventa y cuatro");
+                case 95 -> System.out.println("Noventa y cinco");
+                case 96 -> System.out.println("Noventa y seis");
+                case 97 -> System.out.println("Noventa y siete");
+                case 98 -> System.out.println("Noventa y ocho");
+                case 99 -> System.out.println("Noventa y nueve");
+                default -> System.out.println("El numero no esta entre el rango comprendido");
+            }*/
+        
+            
+        
+    
+
     }   
            
 }
