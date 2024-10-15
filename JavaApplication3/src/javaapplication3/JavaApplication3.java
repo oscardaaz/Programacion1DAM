@@ -1021,9 +1021,87 @@ public class JavaApplication3 {
                 default -> System.out.println("El numero no esta entre el rango comprendido");
             }*/
         
-            
         
-    
+        /*Media de diez numeros enteros ejercicio libro nose cuantos ya*/
+        
+        /*int numero, suma = 0;
+        double media;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Introduzca diez numeros enteros");
+        for (int i=1; i<11 ; i++){
+            System.out.println("Introduzca el numero "+i+": ");
+            numero = sc.nextInt();
+            suma += numero;    
+        }
+        media = suma/10.0;
+        System.out.println("Tu media es: " + media);*/
+        
+        
+        //Tabla de multiplicar:
+        /*int numero;
+        Scanner sc = new Scanner(System.in);
+            do{
+                System.out.println("Introduzca un numero comprendido entre 1 y 10");
+                numero = sc.nextInt();
+                
+            
+            }while (numero>10 || numero<1);
+            System.out.println("La tabla de multiplicar del numero " + numero + " es:");
+            for(int i=1; i<=10;i++){
+                
+                System.out.println(numero + " x " +i+" = " + numero*i);*
+            } */
+        
+        
+        /*int resultado = 0, numeroImpar;
+        System.out.println("Lista de los 10 primeros numeros impares");
+        
+        for(int i=1;i<=10;i++){
+            numeroImpar=2*i-1;
+            resultado +=numeroImpar;
+            System.out.println("Numero "+i+": "+numeroImpar);
+        }
+          System.out.println("La suma de los 10 primeros numeros impares es " + resultado);*/
+        
+        
+        /*El programa le pide al usuario la longitud  de la pista,
+        que debe estar entre 200 y 800 metros.
+        Luego pide los nombres de los dos atletas que compiten.
+        La posicion de cada atleta se calcula con una funcion random,
+        que devuelve un valor entre 1 y 10.
+        El programa debe mostrar la posicion de cada atleta a lo largo 
+        de la carrera e indicar el atleta ganador, o si ha habido empate
+        */
+        
+        //Declaracion de variables a utilizar
+        /*Scanner sc = new Scanner(System.in);
+        int longPista, posAt1=0, posAt2=0;
+        String nombreAt1, nombreAt2;
+        Random rd = new Random();
+        //Solicitamos al usuario la longitud de la pista
+        do{
+            System.out.println("Introduzca longitud de pista (200 a 800):");
+            longPista = sc.nextInt();
+        }while (longPista<200 || longPista>800); 
+
+        //Solicitamos al usuario los nombres de los atletas
+        System.out.println("Introduce el nombre del primer atleta");
+        nombreAt1 = sc.next();
+        System.out.println("Introduce el nombre del segundo atleta");
+        nombreAt2 = sc.next();
+        
+        do{ 
+            posAt1 += rd.nextInt(10);
+            System.out.println("Posicion del atleta " +nombreAt1+ ": " + posAt1);
+            posAt2 += rd.nextInt(10);
+            System.out.println("Posicion del atleta " +nombreAt2+ ": " + posAt2);
+            
+        }while(posAt1<longPista && posAt2<longPista);
+        
+        if (posAt1 == posAt2)System.out.println("Ha habido empate");
+        else if (posAt1>posAt2) System.out.println("Ha ganado " +nombreAt1+".");
+        else System.out.println("Ha ganado "+nombreAt2+ ".");*/
 
     }   
            
