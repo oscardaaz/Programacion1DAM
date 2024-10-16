@@ -1102,7 +1102,22 @@ public class JavaApplication3 {
         if (posAt1 == posAt2)System.out.println("Ha habido empate");
         else if (posAt1>posAt2) System.out.println("Ha ganado " +nombreAt1+".");
         else System.out.println("Ha ganado "+nombreAt2+ ".");*/
+        
+        
+         /*Implementa un programa que pida al usuario un numero positivo y lo 
+        muestre guarismo a guarismo. Por ejemplo, para el numero 123, debe mostrar 
+        primero el 3, a continuacion el 2 y por ultimo el 1.*/
 
+
+        /*Scanner sc = new Scanner(System.in);
+        String numero;
+        int tamañoNumero;
+        System.out.println("Introduzca un numero positivo: ");
+        numero = sc.nextLine();
+        tamañoNumero = numero.length();
+        for (int i = tamañoNumero-1; i>=0;i--){
+            System.out.println(numero.charAt(i));
+        }*/
     }   
            
 }
