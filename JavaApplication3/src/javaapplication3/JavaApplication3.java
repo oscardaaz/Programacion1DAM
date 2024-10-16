@@ -1118,8 +1118,68 @@ public class JavaApplication3 {
         for (int i = tamañoNumero-1; i>=0;i--){
             System.out.println(numero.charAt(i));
         }*/
-    }   
-           
+        
+        
+        /*Calculo de nota y si hay suspensos*/
+        
+        /*double nota;
+        int numeroSuspensos=0;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca la calificacion de 5 alumnos: ");
+        for (int i=1; i<=5; i++){
+            System.out.print("Nota del alumno "+i+": ");
+            nota = sc.nextDouble();
+            if (nota<5){
+                numeroSuspensos++;
+            }
+        }
+        if (numeroSuspensos>=1){
+            System.out.println("Numero de alumnos suspensos: "+numeroSuspensos);
+        }else if (numeroSuspensos == 1){
+            System.out.println("Hay un suspenso");
+        }else System.out.println("Estan todos aprobados");*/
+        
+        
+        /*Pedir un numero entero y que calcule el factorial de este*/
+    
+    
+        /*Scanner sc = new Scanner(System.in);
+        int numero;
+        int factorial=1;
+        System.out.println("Introduzca un numero positivo: ");
+        numero = sc.nextInt();
+        
+        for (int i = numero; i>0;i--){
+            factorial *=i;
+        }
+        System.out.println("El factorial de "+numero+" es "+factorial); */
+        
+        
+        /*Calculo de nota y si hay suspensos*/
+        
+        /*double nota;
+        int numeroSuspensos=0, numeroCondicionados=0,numeroAprobados=0;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca la calificacion de 6 alumnos: ");
+        for (int i=1; i<=6; i++){
+            System.out.print("Nota del alumno "+i+": ");
+            nota = sc.nextDouble();
+            if (nota<4){
+                numeroSuspensos++;
+                
+            }else if (nota>=4 && nota<5){
+            numeroCondicionados++;
+            
+            }else numeroAprobados++;
+        }    
+        
+            System.out.println("Numero de alumnos aprobados: "+numeroAprobados);
+            System.out.println("Numero de alumnos condicionados: "+numeroCondicionados);
+            System.out.println("Numero de alumnos suspensos: "+numeroSuspensos);*/
+       
+    }       
 }
         
         
