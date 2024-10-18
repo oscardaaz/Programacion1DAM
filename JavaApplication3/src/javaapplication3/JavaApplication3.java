@@ -1178,7 +1178,94 @@ public class JavaApplication3 {
             System.out.println("Numero de alumnos aprobados: "+numeroAprobados);
             System.out.println("Numero de alumnos condicionados: "+numeroCondicionados);
             System.out.println("Numero de alumnos suspensos: "+numeroSuspensos);*/
-       
+        
+        
+        //Triamgulo rectangulo
+        
+        /*int numeroElementos;
+        System.out.println("Introduzca el numero de elementos del lado"
+                + " del triangulo rectangulo");
+        numeroElementos = new Scanner(System.in).nextInt();
+        
+        for(int i = numeroElementos; i>0;i--){
+            for (int j=i; j>0;j--){
+                System.out.print("* ");
+            }
+            System.out.println("");
+        }*/
+        
+        //Triamgulo rectangulo invertido
+        
+        /*int numeroElementos;
+        System.out.println("Introduzca el numero de elementos del lado"
+                + " del triangulo rectangulo");
+        numeroElementos = new Scanner(System.in).nextInt();
+        
+        for(int i = 1; i<=numeroElementos;i++){
+            for (int j=i; j>0;j--){
+                System.out.print("* ");
+            }
+            System.out.println("");
+        }*/
+        
+        
+        /*Realiza un programa que convierta un número decimal en su 
+        representación binaria. Hay que tener en cuenta que desconocemos 
+        cuántas cifras tiene el número que introduce el usuario. Por 
+        simplicidad, iremos mostrando el número binario con un dígito por línea.*/
+        
+        /*Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario un número decimal
+        System.out.print("Introduce un numero entero: ");
+        int numeroDecimal = scanner.nextInt();
+
+        // Convertir el número decimal a binario
+        String binario = Integer.toBinaryString(numeroDecimal);
+
+        // Mostrar cada dígito del número binario en una línea separada
+        for (char digito : binario.toCharArray()) {
+            System.out.println(digito);
+        }*/
+        
+        
+        /*Escribe un programa que incremente la hora de un reloj. Se pedirá por 
+        teclado la hora, minutos y segundos, así como cuántos segundos 
+        se desea incrementar  la hora introducida. La aplicación mostrará la 
+        nueva hora. Por ejemplo, si las 13:59:51 se incrementan en 10 segundos, 
+        resultan las 14:00:01.*/
+        
+        /*Scanner scanner = new Scanner(System.in);
+
+        // Solicitar hora, minutos y segundos
+        System.out.print("Introduce la hora (0-23): ");
+        int hora = scanner.nextInt();
+        
+        System.out.print("Introduce los minutos (0-59): ");
+        int minutos = scanner.nextInt();
+        
+        System.out.print("Introduce los segundos (0-59): ");
+        int segundos = scanner.nextInt();
+        
+        // Solicitar los segundos a incrementar
+        System.out.print("Introduce cuántos segundos deseas incrementar: ");
+        int incrementoSegundos = scanner.nextInt();
+
+        // Sumar los segundos
+        segundos += incrementoSegundos;
+
+        // Calcular minutos y horas
+        minutos += segundos / 60;
+        segundos %= 60; // Resto para obtener segundos
+
+        hora += minutos / 60;
+        minutos %= 60; // Resto para obtener minutos
+
+        hora %= 24; // Ajustar horas a formato 24
+
+        // Mostrar la nueva hora
+        System.out.printf("La nueva hora es: %02d:%02d:%02d%n", hora, minutos, segundos);*/
+        
     }       
 }
         
