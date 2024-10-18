@@ -1236,21 +1236,26 @@ public class JavaApplication3 {
         resultan las 14:00:01.*/
         
         /*Scanner scanner = new Scanner(System.in);
-
+        int hora, minutos,segundos;
         // Solicitar hora, minutos y segundos
-        System.out.print("Introduce la hora (0-23): ");
-        int hora = scanner.nextInt();
-        
-        System.out.print("Introduce los minutos (0-59): ");
-        int minutos = scanner.nextInt();
-        
-        System.out.print("Introduce los segundos (0-59): ");
-        int segundos = scanner.nextInt();
-        
-        // Solicitar los segundos a incrementar
-        System.out.print("Introduce cuántos segundos deseas incrementar: ");
-        int incrementoSegundos = scanner.nextInt();
+        do {
+            System.out.print("Introduce la hora (0-23): ");
+            hora = scanner.nextInt();
 
+            System.out.print("Introduce los minutos (0-59): ");
+            minutos = scanner.nextInt();
+
+            System.out.print("Introduce los segundos (0-59): ");
+            segundos = scanner.nextInt();
+                if (hora>23 || hora<0 || minutos>59 || minutos<0 || segundos>59 || segundos<0){
+                    System.out.println("Error, introduce los datos dentro de los margenes permitidos");    
+                }
+        }while(hora>23 || hora<0 || minutos>59 || minutos<0 || segundos>59 || segundos<0);
+                
+        // Solicitar los segundos a incrementar
+        System.out.print("Introduce cuantos segundos deseas incrementar: ");
+        int incrementoSegundos = scanner.nextInt();
+        
         // Sumar los segundos
         segundos += incrementoSegundos;
 
@@ -1266,6 +1271,41 @@ public class JavaApplication3 {
         // Mostrar la nueva hora
         System.out.printf("La nueva hora es: %02d:%02d:%02d%n", hora, minutos, segundos);*/
         
+        
+        //Solicita al usuario un número y dibuja un triángulo de base y altura n
+        
+      
+        /*int elementos;
+        System.out.println("Introduce el numero de elementos de tu triangulo equilatero");
+        
+        elementos = new Scanner(System.in).nextInt();
+            for (int i=1;i<=elementos;i++){
+                for (int k=elementos-i;k>0;k--){
+                    System.out.print(" ");
+                }
+            for (int j=1;j<=i;j++){
+                System.out.print("* ");
+                }
+                System.out.println("");
+            }*/
+        
+        //Otra forma con codigo optimizado:
+        
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce el numero de elementos de tu triangulo equilatero:");
+
+        int elementos = scanner.nextInt();
+
+        for (int i = 1; i <= elementos; i++) {
+            // Imprimir espacios
+            System.out.print(" ".repeat(elementos - i));
+            // Imprimir asteriscos
+            System.out.print("* ".repeat(i));
+            // Nueva línea
+            System.out.println();
+        }*/
+    
+    
     }       
 }
         
