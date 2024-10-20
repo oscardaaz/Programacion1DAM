@@ -1247,6 +1247,7 @@ public class JavaApplication3 {
 
             System.out.print("Introduce los segundos (0-59): ");
             segundos = scanner.nextInt();
+                //Declaramos una condicion para solo poder introducir los valores permitidos
                 if (hora>23 || hora<0 || minutos>59 || minutos<0 || segundos>59 || segundos<0){
                     System.out.println("Error, introduce los datos dentro de los margenes permitidos");    
                 }
@@ -1268,7 +1269,7 @@ public class JavaApplication3 {
 
         hora %= 24; // Ajustar horas a formato 24
 
-        // Mostrar la nueva hora
+        // Mostrar la nueva hora, con un formato personalizado con printf
         System.out.printf("La nueva hora es: %02d:%02d:%02d%n", hora, minutos, segundos);*/
         
         
@@ -1304,6 +1305,59 @@ public class JavaApplication3 {
             // Nueva línea
             System.out.println();
         }*/
+        
+        
+        /*Calcula la raíz cuadrada de un número natural mediante aproximaciones. 
+        En el caso de que no sea exacta, muestra el resto.*/
+        
+        // Crear un escáner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+        
+        // Pedir al usuario que ingrese un número natural
+        System.out.print("Ingresa un numero natural: ");
+        int numero = scanner.nextInt();//Entrada por teclado
+
+        // Inicializar variables necesarias
+        double aproximacion = 0.0;
+        double cuadrado;
+
+        // Bucle para encontrar la raíz cuadrada
+        while (true) {
+            cuadrado = aproximacion * aproximacion; // Calcular el cuadrado de la aproximación
+            
+            // Verificar si el cuadrado es mayor o igual que el número
+            if (cuadrado >= numero) {
+                break; // Salir del bucle si se supera el número
+            }
+            aproximacion += 0.01; // Incrementar en pasos de 0.01
+        }
+
+        // Calcular el resto
+        double resto = (numero - cuadrado)*-1;
+
+        // Mostrar el resultado con dos decimales
+        System.out.printf("La raiz cuadrada aproximada de %d es %.2f con un resto de %.2f.%n", 
+                          numero, aproximacion, resto);
+        
+        
+        //Realiza un programa que calcule el máximo común divisor de dos números.
+        
+        Scanner scanner = new Scanner(System.in);//Declaramos el escaner
+        //Pedimos al usuario los numeros por teclado.
+        System.out.print("Ingrese el primer numero: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Ingrese el segundo numero: ");
+        int b = scanner.nextInt();
+
+        //Implementamos el algoritmo de Euclides
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        //Imprimimos en pantalla el maximo comun divisor
+        System.out.println("El maximo comun divisor de los numeros es: " +a);
     
         /*static void numAleatorios (int cantidad, int min, int max){
             int numGenerado;
