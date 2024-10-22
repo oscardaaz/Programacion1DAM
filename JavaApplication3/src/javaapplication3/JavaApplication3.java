@@ -1337,7 +1337,7 @@ public class JavaApplication3 {
                 numAleatorios(2);*/
         
         
-        static String juegoPPT(){
+        /*static String juegoPPT(){
         Random rd = new Random();
         int valor = rd.nextInt(1,4);
         String resultado;
@@ -1371,7 +1371,7 @@ public class JavaApplication3 {
                       
                     
         
-        }
+        }*/
        
         
         }       
