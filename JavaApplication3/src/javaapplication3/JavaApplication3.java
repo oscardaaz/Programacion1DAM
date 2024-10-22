@@ -1337,41 +1337,6 @@ public class JavaApplication3 {
                 numAleatorios(2);*/
         
         
-        /*static String juegoPPT(){
-        Random rd = new Random();
-        int valor = rd.nextInt(1,4);
-        String resultado;
-        switch (valor){
-            case 1 ->
-                resultado = "Piedra";
-            case 2 ->
-                resultado = "Papel";
-            case 3 ->
-                resultado = "Tijera";
-            default ->
-                resultado = "Error";
-        } 
-            return resultado;
-        }
-
-        public static void main(String[] args) {
-
-            System.out.println("Piedra, papel o tijera: ");
-            String valorJugador = new Scanner(System.in).next();
-            String valorMaquina = juegoPPT();
-            if (valorMaquina.equalsIgnoreCase(valorJugador)){
-                System.out.println("Empate a "+valorJugador);
-
-        }else{
-
-            if (valorMaquina.equals("Papel")){ System.out.println("Gana la maquina");
-            }else System.out.println("Gana el jugador");
-            
-         
-                      
-                    
-        
-        }*/
        
         
         }       
