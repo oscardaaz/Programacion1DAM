@@ -1305,9 +1305,77 @@ public class JavaApplication3 {
             System.out.println();
         }*/
     
-    
-    }       
-}
+        /*static void numAleatorios (int cantidad, int min, int max){
+            int numGenerado;
+            Random rd = new Random();
+            for (int i = 1; i<=cantidad; i++){
+                numGenerado = rd.nextInt(min, max+1);
+                System.out.println("Numero " +i+" : "+numGenerado);
+            }
+        }
+
+        static void numAleatorios (int cantidad){
+            double numGenerado;
+
+            for (int i = 1; i<=cantidad; i++){
+                numGenerado = Math.random();
+                System.out.println("Numero " +i+" : "+numGenerado);
+            }
+        }
+
+
+
+
+        public static void main(String[] args) {
+
+                numAleatorios(5);
+                System.out.println("**********************");
+                numAleatorios(4,6,15);
+                System.out.println("**********************");
+                numAleatorios(3,0,1);
+                System.out.println("**********************");
+                numAleatorios(2);*/
+        
+        
+        static String juegoPPT(){
+        Random rd = new Random();
+        int valor = rd.nextInt(1,4);
+        String resultado;
+        switch (valor){
+            case 1 ->
+                resultado = "Piedra";
+            case 2 ->
+                resultado = "Papel";
+            case 3 ->
+                resultado = "Tijera";
+            default ->
+                resultado = "Error";
+        } 
+            return resultado;
+        }
+
+        public static void main(String[] args) {
+
+            System.out.println("Piedra, papel o tijera: ");
+            String valorJugador = new Scanner(System.in).next();
+            String valorMaquina = juegoPPT();
+            if (valorMaquina.equalsIgnoreCase(valorJugador)){
+                System.out.println("Empate a "+valorJugador);
+
+        }else{
+
+            if (valorMaquina.equals("Papel")){ System.out.println("Gana la maquina");
+            }else System.out.println("Gana el jugador");
+            
+         
+                      
+                    
+        
+        }
+       
+        
+        }       
+    }
         
         
        
