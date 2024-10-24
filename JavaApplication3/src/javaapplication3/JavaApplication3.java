@@ -1336,7 +1336,38 @@ public class JavaApplication3 {
                 System.out.println("**********************");
                 numAleatorios(2);*/
         
+            /*Diseña una función que calcule y muestre la superficie y volumen de una esfera, sabiendo que
+            se calculan de la siguiente forma: */
         
+            /* public static double esfera (double radio){
+       
+            do{
+
+             Scanner sc = new Scanner(System.in);   
+             System.out.print("Introduce el radio de la esfera en metros: "); 
+             sc.useLocale(Locale.US);
+             radio = sc.nextDouble();
+
+            if (radio <= 0) {
+                System.out.println("Error, el radio debe ser un numero positivo. Intentalo de nuevo, gracias.");
+                }
+            }while(radio<=0);
+            
+            DecimalFormat df = new DecimalFormat("#.##"); 
+            double superficie = 4 * Math.PI*Math.pow(radio, 2);
+            double volumen = 4*Math.PI/3*Math.pow(radio, 3);
+            System.out.println("");
+            System.out.println("La superficie de la esfera es: " + df.format(superficie) + " metros cuadrados.");
+            System.out.println("");
+            System.out.println("El volumen de la esfera es: " + df.format(volumen) + " metros cubicos.");
+            System.out.println("");
+
+            return superficie;
+
+            }    
+             public static void main(String[] args) {
+
+              esfera(-1);*/
        
         
         }       
