@@ -1369,7 +1369,36 @@ public class JavaApplication3 {
 
               esfera(-1);*/
        
+            
+       /* public static double calcularDistancia(){ //Creamos la funcion para calcular la distancia euclidea de dos puntos (x,y).
         
+            DecimalFormat df = new DecimalFormat("#.##"); //Definimos la aproximacion a los decimales necesarios.
+            Scanner sc = new Scanner(System.in); //Iniciamos el escaner.
+            sc.useLocale(Locale.US); //Forzamos a usar decimales con punto.
+            
+            //Iniciamos las variables necesarias y pedimos los datos al usuario por teclado.
+            System.out.print("Introduce el valor de x1: ");
+            double x1 = sc.nextDouble();
+            System.out.print("Introduce el valor de y1: ");
+            double y1 = sc.nextDouble();
+            System.out.print("Introduce el valor de x2: ");
+            double x2 = sc.nextDouble();
+            System.out.print("Introduce el valor de y2: ");
+            double y2 = sc.nextDouble();
+            System.out.println("");//Salto de linea
+            
+            //Creamos la variable de la operacion que necesitamos, y la imprimimos en pantalla.
+            double distancia = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+            System.out.println("La distancia euclidea de tus puntos es de: " + df.format(distancia)+" unidades.");
+        
+            return distancia;
+        
+    }
+    public static void main(String[] args) {
+    
+        //Implementa la función que calcula y devuelve la distancia euclídea que separa los puntos (x1, y1) y (x2, y2).
+        
+        calcularDistancia(); //Lamamos a la funcion creada.*/
         }       
     }
         
