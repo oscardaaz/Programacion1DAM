@@ -53,7 +53,7 @@ public class Ejercicios2 {
     
 }*/
         //Implementa la función que calcula y devuelve la distancia euclídea que separa los puntos (x1, y1) y (x2, y2).
-    public static double calcularDistancia(){ //Creamos la funcion para calcular la distancia euclidea de dos puntos (x,y).
+    /*public static double calcularDistancia(){ //Creamos la funcion para calcular la distancia euclidea de dos puntos (x,y).
         
             DecimalFormat df = new DecimalFormat("#.##"); //Definimos la aproximacion a los decimales necesarios.
             Scanner sc = new Scanner(System.in); //Iniciamos el escaner.
@@ -84,4 +84,4 @@ public class Ejercicios2 {
         calcularDistancia(); //Lamamos a la funcion creada.
         
             }
-    }
+    }*/
