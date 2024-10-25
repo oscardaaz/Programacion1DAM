@@ -1463,6 +1463,24 @@ public class JavaApplication3 {
        
       
             diferenciaMin(24,40,24,60);*/
+          
+        /*  public static int calculoSegundos (){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Introduce las dias, horas, minutos");
+            int dias = sc.nextInt(), horas = sc.nextInt(), minutos = sc.nextInt();
+            int segundos = dias*24*3600 + horas*3600+minutos*60;
+            System.out.println("Los segundos totales son: "+segundos);
+            return segundos;
+        }
+        
+        public static void main(String[] args) {
+        
+        /*Escribe una función a la que se le pase como parámetros de entrada una cantidad de días, horas y 
+        minutos. La función calculará y devolverá el número de segundos que existen en los datos de entrada.*/
+        
+        
+           // calculoSegundos();*/
+        
 
 
         }     
