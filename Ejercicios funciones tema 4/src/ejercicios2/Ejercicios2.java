@@ -91,4 +91,18 @@ public class Ejercicios2 {
         calcularDistancia(); //Lamamos a la funcion creada.
         
             }*/
+ 
+/* static double distancia (double x1, double y1, double x2, double y2){
+        DecimalFormat df = new DecimalFormat("#.##");
+        double distancia = Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2, 2));
+        System.out.println("La distancia euclidea de tus dos puntos es de: "+df.format(distancia)+" unidades.");
+        System.out.println("");
+        return distancia;
     }
+        
+    public static void main(String[] args) {
+        distancia(-5,4,6,-5);
+        distancia(5,4,7,1);*/
+
+
+}
