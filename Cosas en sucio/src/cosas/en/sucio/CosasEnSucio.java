@@ -17,7 +17,7 @@ public class CosasEnSucio {
         // TODO code application logic here
         
         
-        asdasdasdadsad
+        int asdasdasdadsad;
         
         
         
