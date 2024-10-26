@@ -1311,7 +1311,7 @@ public class JavaApplication3 {
         En el caso de que no sea exacta, muestra el resto.*/
         
         // Crear un escáner para leer la entrada del usuario
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         
         // Pedir al usuario que ingrese un número natural
         System.out.print("Ingresa un numero natural: ");
