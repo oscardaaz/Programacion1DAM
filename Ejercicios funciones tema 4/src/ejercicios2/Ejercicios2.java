@@ -134,6 +134,38 @@ public class Ejercicios2 {
         
         
             //calculoSegundos();
+    
+    /*public class Ejercicios {
+    
+    public static double esfera (double radio){
+        
+            DecimalFormat df = new DecimalFormat("#.##"); 
+            double superficie = 4 * Math.PI*Math.pow(radio, 2);
+            double volumen = 4*Math.PI/3*Math.pow(radio, 3);
+            if (radio < 0){
+                System.out.println("No se permiten numeros negativos");
+            }else{
+            System.out.println("La superficie de la esfera es: " + df.format(superficie) + " metros cuadrados.");
+            System.out.println("El volumen de la esfera es: " + df.format(volumen) + " metros cubicos.");
+            }
+            return superficie;
+    }
+    public static void main(String[] args) {
+           
+            esfera(5);*/
+    
+   /* public static int numerosPares (int numero){
+                for ( int i = 1; i <= numero; i++){
+                    System.out.println(i * 2);
+                       
+                }
+                return numero;
+        }
+            
+        public static void main(String[] args) {
+        
+            //Crea la función muestraPares (int n) que muestre por consola los primeros n números pares.
+            numerosPares(20);*/
         
 
 
