@@ -4,22 +4,23 @@
  */
 package cosas.en.sucio;
 
-/**
- *
- * @author oscar.domalo
- */
-public class CosasEnSucio {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+
+    public class CosasEnSucio {
+
+        public static int numerosPares (int numero){
+            System.out.println("Los primeros " + numero + " numeros pares son: ");
+                for ( int i = 1; i <= numero; i++){
+                    System.out.println(i * 2);
+                       
+                }
+                return numero;
+        }
+            
+        public static void main(String[] args) {
         
-        
-        int asdasdasdadsad;
-        
-        
+            //Crea la función muestraPares (int n) que muestre por consola los primeros n números pares.
+            numerosPares(5);
         
         
     }
