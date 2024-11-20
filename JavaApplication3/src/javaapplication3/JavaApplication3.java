@@ -8,6 +8,7 @@ import java.util.Scanner;
 import java.math.*;
 import java.text.DecimalFormat;
 import java.util.*;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -1393,7 +1394,7 @@ public class JavaApplication3 {
             /*Diseña una función que calcule y muestre la superficie y volumen de una esfera, sabiendo que
             se calculan de la siguiente forma: */
         
-            /* public static double esfera (double radio){
+            /*public static double esfera (double radio){
        
             do{
 
@@ -1535,6 +1536,57 @@ public class JavaApplication3 {
         
            // calculoSegundos();*/
         
+           
+           /*String texto = JOptionPane.showInputDialog("Introduce un radio");
+        double radio = Double.parseDouble(texto);
+
+        double area = Math.PI * Math.pow(radio, 2);
+        System.out.println("El radio de tu circunferencia es" + area * 1.0);*/
+           
+           
+           /*int metrosPista;
+        int distancia = 0;
+        String nombre;
+
+        Scanner sc = new Scanner(System.in);
+        Random rd = new Random();
+        String tablaNombres[] = new String[0];
+        int[] tablaDistancias;
+
+        System.out.println("Introduzca nombre de los competidores: ");
+
+        nombre = sc.nextLine();
+        while (!nombre.toUpperCase().equals("FIN")) {
+            tablaNombres = añadirNombre(tablaNombres, nombre);
+            nombre = sc.nextLine();
+        }
+       
+        System.out.println(Arrays.toString(tablaDistancias));
+
+        System.out.println("Introduzca la longitud de la pista en metros: ");
+        metrosPista = sc.nextInt();
+
+        tablaDistancias = new int[tablaNombres.length];
+        System.out.println(Arrays.toString(tablaDistancias));
+
+        while (distancia < metrosPista) {
+            for (int i = 0; i < tablaDistancias.length; i++) {
+                tablaDistancias[i] += rd.nextInt(5,15);
+                if (distancia < tablaDistancias [i]) {
+                    distancia = tablaDistancias [i];
+                }
+            }
+            
+        }
+
+    }
+
+    public static String[] añadirNombre(String[] tabla, String nombre) {
+        tabla = Arrays.copyOf(tabla, tabla.length + 1);
+        tabla[tabla.length - 1] = nombre;
+
+        return tabla;
+    }*/
 
 
         }     
