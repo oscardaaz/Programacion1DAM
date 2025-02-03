@@ -3,27 +3,41 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package ejercicios;
+
+import java.text.DecimalFormat;
+import java.util.Locale;
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  *
  * @author oscar.domalo
  */
 public class Ejercicios {
-    
-    public static int diferenciaMin(int hora1, int minuto1, int hora2, int minuto2){ //Creamos la funcion diferenciaMin
-        
-        //Creamos una variable con la operacion necesaria.
-        int diferenciaMinutos = (hora1*60+minuto1)-(hora2*60+minuto2);
-        
-        //Imprimimos el texto con el resultado en pantalla.
-        System.out.println("Los minutos de diferencia son: "+Math.abs(diferenciaMinutos)+" minutos");
-        return diferenciaMinutos;//Ponemos el return, siendo necesario para almacenar la variable si fuera necesario.     
-    }
-        
     public static void main(String[] args) {
-           
-            //Llamamos a nuestra funcion en el main.
-            diferenciaMin(14,30,18,50); 
-  
-    }
+       
+        //Realiza un programa que calcule el máximo común divisor de dos números.
+        
+        Scanner scanner = new Scanner(System.in);//Declaramos el escaner
+        //Pedimos al usuario los numeros por teclado.
+        System.out.print("Ingrese el primer numero: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Ingrese el segundo numero: ");
+        int b = scanner.nextInt();
+
+        //Implementamos el algoritmo de Euclides
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        //Imprimimos en pantalla el maximo comun divisor
+        System.out.println("El maximo comun divisor de los numeros es: " +a);
+        
+        
     
+        
+        
+    }
 }
