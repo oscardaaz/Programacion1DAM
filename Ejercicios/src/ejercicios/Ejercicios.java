@@ -35,7 +35,7 @@ public class Ejercicios {
         //Imprimimos en pantalla el maximo comun divisor
         System.out.println("El maximo comun divisor de los numeros es: " +a);
         
-        
+        /**/
     
         
         
