@@ -1,0 +1,8 @@
+Primera linea del archivo
+Segunda linea
+Fin del archivo
+
+Primera linea del archivo
+Segunda linea
+Fin del archivo
+

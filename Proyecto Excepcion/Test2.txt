@@ -1,0 +1,5 @@
+cabecera de texto
+segunda linea
+fin de archivo
+Jorge Viana es una maquina 
+    de la programacion
