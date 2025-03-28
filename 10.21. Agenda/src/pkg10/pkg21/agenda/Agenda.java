@@ -46,8 +46,7 @@ public class Agenda {
             System.out.println("Error ya has llegado al limite de contactos");
         }else{
             for (int i = 0; i < MAX_CONTACTOS; i++) {
-                agenda[i] = new Contacto(sc.nextLine());
-                cantidadContactos++;
+                
             }
             
         }
