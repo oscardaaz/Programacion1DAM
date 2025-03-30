@@ -1,4 +1,2 @@
-Oscar, 12, 5
-Oscar, 45, 45
-Jorge, 78, 89
-Oscar, 25, 12
+Oscar, 26, 183
+Jorge, 32, 180
