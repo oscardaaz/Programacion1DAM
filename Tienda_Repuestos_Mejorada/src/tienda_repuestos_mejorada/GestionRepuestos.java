@@ -135,4 +135,30 @@ public class GestionRepuestos {
             repuestos[i].mostrar();
         }
     }
+
+    public static class ComparadorPorDescripcion implements Comparator<Repuesto> {
+
+        @Override
+        public int compare(Repuesto r1, Repuesto r2) {
+            return r1.getDescripcion().compareToIgnoreCase(r2.getDescripcion());
+        }
+    }
+
+// Ordenar por departamento y luego descripción
+    public static class ComparadorPorDeptoYDescripcion implements Comparator<Repuesto> {
+
+        @Override
+        public int compare(Repuesto r1, Repuesto r2) {
+            int cmp = r1.getDepartamento().compareToIgnoreCase(r2.getDepartamento());
+            return (cmp != 0) ? cmp : r1.getDescripcion().compareToIgnoreCase(r2.getDescripcion());
+        }
+    }
+
+    public static void listarPorCodigoComparable() {
+        Repuesto[] copia = Arrays.copyOf(repuestos, total); // Copia por seguridad
+        Arrays.sort(copia); // Usa compareTo de Repuesto
+        for (Repuesto r : copia) {
+            r.mostrar();
+        }
+    }
 }

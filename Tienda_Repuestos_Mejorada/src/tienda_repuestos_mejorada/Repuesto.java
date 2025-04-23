@@ -2,7 +2,7 @@ package tienda_repuestos_mejorada;
 
 import java.io.Serializable;
 
-public class Repuesto implements Serializable {
+public class Repuesto implements Serializable, Comparable<Repuesto> {
 
     private int codigo; // Código único del repuesto
     private String descripcion; // Descripción del repuesto
@@ -53,5 +53,10 @@ public class Repuesto implements Serializable {
     // Método para mostrar los datos del repuesto
     public void mostrar() {
         System.out.println("Codigo: " + codigo + ", Descripcion: " + descripcion + ", Departamento: " + departamento + ", Stock: " + stock);
+    }
+
+    @Override
+    public int compareTo(Repuesto otro) {
+        return Integer.compare(this.codigo, otro.codigo);
     }
 }

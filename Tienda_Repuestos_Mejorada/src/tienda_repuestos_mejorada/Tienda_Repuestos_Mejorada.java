@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Tienda_Repuestos_Mejorada {
 
     public static void main(String[] args) {
-        
+
         // Cargar los datos desde el archivo binario al iniciar
         GestionRepuestos.cargarDatos();
 
         Scanner sc = new Scanner(System.in);
         int opcion;
-        
+
         do {
             // Menú de opciones
-            System.out.println("\n1. Listar por codigo");
+            System.out.println("\n1. Listar por codigo (Comparator)");
             System.out.println("2. Listar por descripcion");
             System.out.println("3. Listar por departamento y descripcion");
             System.out.println("4. Listar con stock menor a cantidad");
@@ -23,6 +23,7 @@ public class Tienda_Repuestos_Mejorada {
             System.out.println("7. Modificar");
             System.out.println("8. Borrar");
             System.out.println("9. Salir y guardar");
+            System.out.println("10. Listar por codigo (Comparable - compareTo)");
             System.out.print("Elige una opcion: ");
             opcion = sc.nextInt();
             sc.nextLine(); // Limpiar el buffer
@@ -60,6 +61,9 @@ public class Tienda_Repuestos_Mejorada {
                 case 9:
                     GestionRepuestos.guardarDatos();
                     System.out.println("Datos guardados correctamente.");
+                    break;
+                case 10:
+                    GestionRepuestos.listarPorCodigoComparable();
                     break;
                 default:
                     System.out.println("Opcion no valida, intenta nuevamente.");
