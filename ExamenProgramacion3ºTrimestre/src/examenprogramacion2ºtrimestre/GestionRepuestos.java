@@ -5,24 +5,24 @@ import java.util.*;
 
 public class GestionRepuestos {
 
-    static String fichero = "repuestos.dat";
+    static String FICHERO = "repuestos.dat";
     static Repuesto[] repuestos = new Repuesto[100];
-    private static int total = 0;
+    static int total = 0;
 
     public static void cargarDatos() {
-        try (ObjectInputStream fich = new ObjectInputStream(new FileInputStream(fichero))) {
+        try (ObjectInputStream fich = new ObjectInputStream(new FileInputStream(FICHERO))) {
             while (true) {
                 Repuesto r = (Repuesto) fich.readObject();
                 repuestos[total++] = r;
             }
-
+        } catch (EOFException e) {
         } catch (Exception e) {
             System.out.println("No se pudo cargar archivo: " + e.getMessage());
         }
     }
 
     public static void guardarDatos() {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fichero))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FICHERO))) {
             for (int i = 0; i < total; i++) {
                 oos.writeObject(repuestos[i]);
             }

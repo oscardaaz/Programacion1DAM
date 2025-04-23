@@ -22,46 +22,56 @@ public class ExamenProgramacion2ºTrimestre {
         do {
             // Menú de opciones
             System.out.println("\n1. Listar por codigo");
-            System.out.println("2. Listar repuestos ordenados por descripción");
-            System.out.println("3. Listar repuestos ordenados por departamento y descripción");
+            System.out.println("2. Listar repuestos ordenados por descripcion");
+            System.out.println("3. Listar repuestos ordenados por departamento y descripcion");
             System.out.println("4. Listar repuestos con stock inferior a…");
-            System.out.println("5. Buscar repuesto por descripción");
+            System.out.println("5. Buscar repuesto por descripcion");
             System.out.println("6. Alta de repuesto");
-            System.out.println("7. Modificación de repuesto");
+            System.out.println("7. Modificacion de repuesto");
             System.out.println("8. Borrar de repuesto");
             System.out.println("9. Salir y guardar");
             System.out.print("Elige una opcion: ");
             opcion = sc.nextInt();
+            System.out.println();
             sc.nextLine();
 
             switch (opcion) {
 
                 case 1:
+                    System.out.println("Repuestos listados por codigo: \n");
+                    //System.out.println();
                     GestionRepuestos.listarPorCodigo();
                     break;
                 case 2:
+                    System.out.println("Lista por descripcion: \n");
                     GestionRepuestos.listarPorDescripcion();
                     break;
                 case 3:
+                    System.out.println("Lista por departamento y descripcion: \n");
                     GestionRepuestos.listarPorDeptoYDescripcion();
                     break;
                 case 4:
-                    System.out.print("Introduce la cantidad minima de stock: ");
+                    System.out.println("Listar repuestos con stock inferior a…");
+                    System.out.print("Introduce la cantidad minima de stock: \n");
                     int cantidad = sc.nextInt();
                     GestionRepuestos.listarPorStock(cantidad);
                     break;
                 case 5:
-                    System.out.print("Introduce la descripcion a buscar: ");
+                    System.out.print("Introduce la descripcion a buscar: \n");
                     String descripcion = sc.nextLine();
                     GestionRepuestos.buscarPorDescripcion(descripcion);
                     break;
                 case 6:
+                    System.out.println("Da de alta un nuevo repuesto: \n");
+
                     altaRepuesto(sc);
                     break;
                 case 7:
+                    System.out.println("Modifica un repuesto existente: \n");
                     modificarRepuesto(sc);
                     break;
                 case 8:
+                    System.out.println("Borra un repuesto existente: \n");
                     borrarRepuesto(sc);
                     break;
                 case 9:
@@ -99,6 +109,7 @@ public class ExamenProgramacion2ºTrimestre {
         System.out.print("Codigo del repuesto a modificar: ");
         int codigo = sc.nextInt();
         sc.nextLine();
+
         System.out.print("Nueva descripcion: ");
         String descripcion = sc.nextLine();
         System.out.print("Nuevo departamento: ");
