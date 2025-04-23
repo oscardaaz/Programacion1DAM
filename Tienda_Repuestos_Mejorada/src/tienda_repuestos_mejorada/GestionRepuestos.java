@@ -161,4 +161,11 @@ public class GestionRepuestos {
             r.mostrar();
         }
     }
+    public static void listarSinOrden() {
+    System.out.println("Listado original (sin ordenar):");
+    for (int i = 0; i < total; i++) {
+        repuestos[i].mostrar();
+    }
+}
+    
 }

@@ -14,7 +14,7 @@ public class Tienda_Repuestos_Mejorada {
 
         do {
             // Menú de opciones
-            System.out.println("\n1. Listar por codigo (Comparator)");
+            System.out.println("\n1. Listar sin ordenar (original)");
             System.out.println("2. Listar por descripcion");
             System.out.println("3. Listar por departamento y descripcion");
             System.out.println("4. Listar con stock menor a cantidad");
@@ -23,15 +23,17 @@ public class Tienda_Repuestos_Mejorada {
             System.out.println("7. Modificar");
             System.out.println("8. Borrar");
             System.out.println("9. Salir y guardar");
-            System.out.println("10. Listar por codigo (Comparable - compareTo)");
+            System.out.println("10. Listar por codigo (Comparator)");
+            System.out.println("11. Listar por codigo (Comparable - compareTo)");
             System.out.print("Elige una opcion: ");
             opcion = sc.nextInt();
             sc.nextLine(); // Limpiar el buffer
 
             // Ejecutar la opción seleccionada
             switch (opcion) {
+
                 case 1:
-                    GestionRepuestos.listarPorCodigo();
+                    GestionRepuestos.listarSinOrden();
                     break;
                 case 2:
                     GestionRepuestos.listarPorDescripcion();
@@ -63,6 +65,9 @@ public class Tienda_Repuestos_Mejorada {
                     System.out.println("Datos guardados correctamente.");
                     break;
                 case 10:
+                    GestionRepuestos.listarPorCodigo();
+                    break;
+                case 11:
                     GestionRepuestos.listarPorCodigoComparable();
                     break;
                 default:
