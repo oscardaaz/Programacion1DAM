@@ -11,7 +11,7 @@ import javax.persistence.*;
  *
  * @author oscar.domalo
  */
-public class UD15Coche {
+public class UD15Coche1_Borrar {
 
     /**
      * @param args the command line arguments
@@ -34,38 +34,18 @@ public class UD15Coche {
         tx.begin();
         if (f1 != null) {
 
-            System.out.println("Introduce nueva marca: ");
-            f1.marca = sc.next();
-            System.out.println("Introduce nuevo modelo:");
-            f1.modelo = sc.next();
-            System.out.println("Introduce nuevo numero de plazas:");
-            f1.numPlazas = sc.nextInt();
+            em.remove(f1);
 
         } else {
             System.out.println("No existe esa matricula en la BBDD.");
         }
         tx.commit();
 
-        System.out.println("Los nuevos datos del coche son:");
-        System.out.println(f1);
-
-        /*f1 = em.find(Coche.class,"124a4CCC");
-        System.out.println(f1);*/
- /*tx = em.getTransaction();
+        System.out.println("Borrado completado!");
+        
         tx.begin();
-        
-        
-        //Coche c1 = new Coche("1244CCC","Ford","Mondeo",5);
-        Coche c2 = new Coche("4040CGT","Ford","Fiesta",4);
-        Coche c3 = new Coche("7060UGT","Audi","A3",4);
-        Coche c4 = new Coche("1221CCr","Audi","TT",4);
-        //em.persist(c1);
-        em.persist(c2);
-        em.persist(c3);
-        em.persist(c4);
-        //c1.numPlazas =3;
-        
-        tx.commit();*/
+        tx.rollback();
+        tx.commit();
         em.close();
         emf.close();
     }
