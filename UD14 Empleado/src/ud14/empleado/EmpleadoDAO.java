@@ -34,17 +34,18 @@ public class EmpleadoDAO {
 
         try (Connection con = conexion(); 
                 
-            PreparedStatement stmt = con.prepareStatement(sql)) {
-                stmt.setInt(1, empleado.getId());
-                stmt.setString(2, empleado.getApellido());
-                stmt.setString(3, empleado.getOficio());
-                stmt.setInt(4, empleado.getDir());
-                stmt.setDate(5, new java.sql.Date(empleado.getFecha_alta().getTime()));
-                stmt.setInt(6, empleado.getSalario());
-                stmt.setInt(7, empleado.getComision());
-                stmt.setInt(8, empleado.getDepartamento());
+            PreparedStatement statement = con.prepareStatement(sql)) {
+                statement.setInt(1, empleado.getId());
+                statement.setString(2, empleado.getApellido());
+                statement.setString(3, empleado.getOficio());
+                statement.setInt(4, empleado.getDir());
+                statement.setDate(5, new java.sql.Date(empleado.getFecha_alta().getTime()));
+                statement.setInt(6, empleado.getSalario());
+                statement.setInt(7, empleado.getComision());
+                statement.setInt(8, empleado.getDepartamento());
 
-                stmt.executeUpdate();
+                statement.executeUpdate();
+                System.out.println("Eliminado con exito");
         } catch (SQLException ex) {
             System.out.println("Error al insertar el empleado");
             ex.printStackTrace();

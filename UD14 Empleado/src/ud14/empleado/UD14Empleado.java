@@ -11,11 +11,12 @@ public class UD14Empleado {
 
     public static void main(String[] args) {
 
-        /*Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // Crear un nuevo empleado
-        Empleado nuevoEmpleado = new Empleado(
-                1002,                       // id
+        
+        /*Empleado nuevoEmpleado = new Empleado(
+                1010,                       // id
                 3000,                       // salario
                 500,                        // comision
                 10,                         // departamento
@@ -51,16 +52,28 @@ public class UD14Empleado {
             System.out.println("Empleado actualizado: " + empleadoLeido);
         }*/
         // Eliminar el empleado
-        /* if (empleadoLeido != null) {
+        /*Empleado empleadoLeido = new Empleado(1002);
+        if (empleadoLeido != null) {
             empleadoLeido.delete();
             System.out.println("Empleado eliminado.");
         }*/
         //sc.close();
+        Empleado empleado = new Empleado(1001);
+        empleado.read();
+        System.out.println(empleado);
+        
+        System.out.println(Empleado.read(1001));
+        
+        
+        /*Empleado empleado = new Empleado(1001);
+        empleado.delete(1001);*/
+        
+        //Empleado.delete(1001);
         
         
         // Llamada a las funciones de prueba
     
-        mainCreate(1003, "LOPEZ", "ANALISTA", 2500, 300, 7839, 20, Date.valueOf("2024-05-14"));
+       /* mainCreate(1003, "LOPEZ", "ANALISTA", 2500, 300, 7839, 20, Date.valueOf("2024-05-14"));
         mainReadEstatico(1003);
         mainReadDinamico(1003);
         mainUpdate(1003, "LOPEZ ACTUALIZADO", 2800, 500);
@@ -107,5 +120,6 @@ public class UD14Empleado {
         Empleado emp = new Empleado(id);
         emp.delete();
         System.out.println("Empleado eliminado con ID: " + id);
-    }
+    }*/
+}
 }
