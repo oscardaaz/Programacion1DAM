@@ -29,10 +29,10 @@ public class UD15Coche1_FIND {
 
         
 
-        f1 = em.find(Propietario.class,"001W");
+        /*f1 = em.find(Propietario.class,"001W");
         System.out.println(f1);
  tx = em.getTransaction();
-        tx.begin();
+        tx.begin();*/
         
         
         

@@ -32,7 +32,8 @@ public class Coche implements Serializable{
 
     @Override
     public String toString() {
-        return "Coche{" + "matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + ", numPlazas=" + numPlazas + '}';
+        return "Coche {" + "matricula = " + matricula + " , marca= " + marca + 
+                " , modelo = " + modelo + " , numPlazas = " + numPlazas + " }";
     }
    
 }

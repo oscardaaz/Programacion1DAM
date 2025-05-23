@@ -32,9 +32,10 @@ public class EmpleadoDAO {
         String sql = "INSERT INTO EMPLE (EMP_NO, APELLIDO, OFICIO, DIR, FECHA_ALT, SALARIO, COMISION, DEPT_NO) "
                 + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
-        try (Connection con = conexion(); 
+        try  {
+            Connection con = conexion(); 
                 
-            PreparedStatement statement = con.prepareStatement(sql)) {
+            PreparedStatement statement = con.prepareStatement(sql);
                 statement.setInt(1, empleado.getId());
                 statement.setString(2, empleado.getApellido());
                 statement.setString(3, empleado.getOficio());

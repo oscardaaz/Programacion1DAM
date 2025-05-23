@@ -43,9 +43,9 @@ public class UD15Coche1_Borrar {
 
         System.out.println("Borrado completado!");
         
-        tx.begin();
-        tx.rollback();
-        tx.commit();
+        //tx.begin();
+        //tx.rollback();
+        //tx.commit();
         em.close();
         emf.close();
     }
