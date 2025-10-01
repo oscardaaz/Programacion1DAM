@@ -1,4 +1,12 @@
+<h1 style="color: #2c3e50; font-family: Arial, sans-serif;">CFGS 1ºDAM.</h1>
+<h2 style="color: #2c3e50; font-family: Arial, sans-serif;">Bienvenidos.</h2>
 
-Bienvenidos.
+<p style="font-size: 16px; color: #34495e; font-family: Arial, sans-serif;">
+  Basicamente son ejercicios de clase en (Proyectos Clase, para tenerlos guardados y actualizados).
+</p>
 
-Basicamente son ejercicios de clase en (Proyectos Clase, para tenerlos guardados y actualizados).
+<h2 style="color: #2c3e50; font-family: Arial, sans-serif;">Welcome.</h2>
+
+<p style="font-size: 16px; color: #34495e; font-family: Arial, sans-serif;">
+  These are basically class exercises in (Class Projects, to keep them saved and updated).
+</p>
