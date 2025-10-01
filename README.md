@@ -1,4 +1,4 @@
-<h2 style="color: #2c3e50; font-family: Arial, sans-serif; text-align: center;">CFGS 1ºDAM.</h2>
+<h2 style="color: #2c3e50; font-family: Arial, sans-serif; font-weight: bold; ">CFGS 1ºDAM.</h2>
 
 <h2 style="color: #2c3e50; font-family: Arial, sans-serif;">Bienvenidos.</h2>
 
